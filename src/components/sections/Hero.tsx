@@ -25,6 +25,11 @@ export default function Hero() {
                 />
             </div>
 
+            {/* Subtext */}
+            <p className="text-[#8B8374] text-[16px] font-medium leading-relaxed max-w-[400px] mb-8 px-4">
+                AI powered micro learning directly through the tools your people already use.
+            </p>
+
             {/* Main Image - No Box Container */}
             <div className="relative w-full max-w-[360px] mx-auto mt-2">
                 <img
