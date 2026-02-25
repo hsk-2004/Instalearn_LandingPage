@@ -1,20 +1,40 @@
+import Image from "next/image";
+
 export default function HowItWorks() {
+
     return (
-        <section id="how-it-works" className="py-20 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-16">Workflow that works for you</h2>
-                <div className="grid md:grid-cols-3 gap-12">
-                    {[
-                        { step: "01", title: "Connect", description: "Connect your existing documentation and tools." },
-                        { step: "02", title: "Analyze", description: "Our AI analyzes and structures your knowledge." },
-                        { step: "03", title: "Learn", description: "Team members access personalized learning paths." },
-                    ].map((item) => (
-                        <div key={item.step} className="relative">
-                            <span className="text-8xl font-black text-blue-100 absolute -top-10 -left-4 -z-10">{item.step}</span>
-                            <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-                            <p className="text-gray-600">{item.description}</p>
-                        </div>
-                    ))}
+        <section className="py-16 px-6 flex flex-col items-center bg-brand-cream">
+            {/* Header SVG */}
+            <div className="mb-8">
+                <Image
+                    src="/howitworks.svg"
+                    alt="How It Works"
+                    width={130}
+                    height={40}
+                    priority
+                />
+            </div>
+
+            {/* Description */}
+            <p className="text-[#8B8374] text-center text-base font-medium max-w-[320px] mb-12 leading-relaxed">
+                An experienced professional can record or generate a 5-minute module in just 30 seconds.
+            </p>
+
+            {/* Steps Vertical List */}
+            <div className="w-full flex flex-col gap-8 max-w-[400px]">
+                {/* Step 1: Create */}
+                <div className="relative">
+                    <Image src="/create.svg" alt="Create" width={400} height={140} className="w-full h-auto" />
+                </div>
+
+                {/* Step 2: Share */}
+                <div className="relative">
+                    <Image src="/share.svg" alt="Share" width={400} height={140} className="w-full h-auto" />
+                </div>
+
+                {/* Step 3: Track */}
+                <div className="relative">
+                    <Image src="/track.svg" alt="Track" width={400} height={140} className="w-full h-auto" />
                 </div>
             </div>
         </section>
