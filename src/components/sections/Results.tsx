@@ -1,56 +1,84 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Results() {
     return (
         <section className="py-12 px-4 flex flex-col items-center">
             {/* Results Pill */}
-            <div className="bg-white border border-gray-200 rounded-full px-6 py-2 shadow-sm mb-12 relative">
-                <span className="text-sm font-medium text-brand-gray">Result from instalearn</span>
-                <div className="absolute -top-4 -right-2 text-2xl">📈</div>
+            <div className="mb-12">
+                <Image
+                    src="/results.svg"
+                    alt="Results from InstaLearn"
+                    width={189}
+                    height={58}
+                    priority
+                />
             </div>
 
-            {/* Stats Grid */}
-            <div className="w-full grid grid-cols-2 gap-4">
-                {/* Card 1 */}
-                <div className="col-span-1 bg-[#FFDAB9] rounded-3xl p-6 flex flex-col justify-between aspect-square relative overflow-hidden">
-                    <div className="text-4xl font-bold text-brand-dark">
-                        80<span className="text-xl font-normal opacity-60">%</span>
-                    </div>
-                    <div className="text-xs font-bold text-brand-dark opacity-80 leading-tight">
-                        Engagement rate
-                    </div>
-                    {/* <Image src="/result_card_1.png" alt="Stat icon" className="absolute bottom-2 right-2 opacity-20" width={40} height={40} /> */}
-                </div>
+            {/* Scrollable Container with two rows */}
+            <div className="w-full overflow-x-auto no-scrollbar pb-8">
+                <div className="flex flex-col gap-4 min-w-max px-6">
+                    {/* Top Row */}
+                    <div className="flex gap-4">
+                        {/* Card 1 - Small */}
+                        <div className="w-[180px] h-[140px] bg-[#FEC893] rounded-[32px] p-6 flex flex-col justify-between shrink-0">
+                            <div className="text-4xl font-bold text-[#5D4037]">
+                                80%+
+                            </div>
+                            <div className="text-sm font-semibold text-[#5D4037] text-right">
+                                Engagement rate
+                            </div>
+                        </div>
 
-                {/* Card 2 */}
-                <div className="col-span-1 bg-[#FFDAB9] rounded-3xl p-6 flex flex-col justify-between aspect-square">
-                    <div className="text-4xl font-bold text-brand-dark">
-                        4x <span className="text-xs font-normal opacity-60 block">higher</span>
+                        {/* Card 2 - Big */}
+                        <div className="w-[280px] h-[140px] bg-[#FEC893] rounded-[32px] p-6 flex flex-col justify-between shrink-0">
+                            <div className="flex items-baseline gap-1">
+                                <div className="text-4xl font-bold text-[#5D4037]">4x</div>
+                                <div className="text-xl font-medium text-[#5D4037] opacity-60">higher</div>
+                            </div>
+                            <div className="text-sm font-semibold text-[#5D4037] text-right">
+                                Completion vs LMS
+                            </div>
+                        </div>
                     </div>
-                    <div className="text-xs font-bold text-brand-dark opacity-0">Hidden</div>
-                </div>
 
-                {/* Card 3 - Wide */}
-                <div className="col-span-2 bg-[#FFDAB9] rounded-3xl p-6 flex flex-col justify-between min-h-[140px]">
-                    <div className="flex items-baseline gap-2">
-                        <div className="text-4xl font-bold text-brand-dark">3-5</div>
-                        <div className="text-lg font-medium text-brand-dark opacity-60">min</div>
-                    </div>
-                    <div className="text-right text-xs font-bold text-brand-dark opacity-80 uppercase tracking-wide">
-                        Average lesson time
-                    </div>
-                </div>
+                    {/* Bottom Row */}
+                    <div className="flex gap-4">
+                        {/* Card 3 - Big */}
+                        <div className="w-[300px] h-[140px] bg-[#FEC893] rounded-[32px] p-6 flex flex-col justify-between shrink-0">
+                            <div className="flex items-baseline gap-2">
+                                <div className="text-4xl font-bold text-[#5D4037]">3-5</div>
+                                <div className="text-xl font-medium text-[#5D4037] opacity-60">min</div>
+                            </div>
+                            <div className="text-sm font-semibold text-[#5D4037] text-right">
+                                Average lesson time
+                            </div>
+                        </div>
 
-                {/* Card 4 */}
-                <div className="col-span-1 bg-[#FFDAB9] rounded-3xl p-6 flex flex-col justify-between aspect-square">
-                    <div className="flex items-baseline gap-1">
-                        <div className="text-3xl font-bold text-brand-dark">2-3</div>
-                        <div className="text-sm font-medium text-brand-dark opacity-60">min</div>
+                        {/* Card 4 - Small */}
+                        <div className="w-[180px] h-[140px] bg-[#FEC893] rounded-[32px] p-6 flex flex-col justify-between shrink-0">
+                            <div className="flex items-baseline gap-1">
+                                <div className="text-4xl font-bold text-[#5D4037]">2-3</div>
+                                <div className="text-xl font-medium text-[#5D4037] opacity-60">min</div>
+                            </div>
+                            <div className="text-sm font-semibold text-[#5D4037] text-right">
+                                Content creation
+                            </div>
+                        </div>
                     </div>
-                    <div className="text-xs font-bold text-brand-dark opacity-0">Hidden</div>
                 </div>
             </div>
+
+            <style jsx>{`
+                .no-scrollbar::-webkit-scrollbar {
+                    display: none;
+                }
+                .no-scrollbar {
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                }
+            `}</style>
         </section>
     );
 }
-
