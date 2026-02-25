@@ -16,10 +16,10 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Headline PNG */}
+            {/* Headline SVG */}
             <div className="mb-6 px-4 w-full flex justify-center">
                 <img
-                    src="/heading.png"
+                    src="/heading.svg"
                     alt="Training that Actually reaches your Workforce"
                     className="w-full max-w-[360px] h-auto object-contain"
                 />
