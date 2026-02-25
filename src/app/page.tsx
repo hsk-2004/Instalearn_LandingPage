@@ -2,6 +2,9 @@ import Hero from "@/components/sections/Hero";
 import Comparison from "@/components/sections/Comparison";
 import Results from "@/components/sections/Results";
 import HowItWorks from "@/components/sections/HowItWorks";
+import Analytics from "@/components/sections/Analytics";
+import Industries from "@/components/sections/Industries";
+import Integrations from "@/components/sections/Integrations";
 
 export default function Home() {
     return (
@@ -10,6 +13,7 @@ export default function Home() {
             <Comparison />
             <Results />
             <HowItWorks />
+            <Integrations />
         </div>
     );
 }

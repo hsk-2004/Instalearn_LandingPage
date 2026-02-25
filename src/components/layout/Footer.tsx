@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="px-6 py-8 bg-brand-cream">
+        <footer className="px-6 py-8 bg-white">
             <div className="bg-[#EFE3D4] border border-[#E5E0D8] rounded-[24px] p-6 max-w-[340px] flex flex-col gap-6">
                 {/* Logo Section */}
                 <div className="flex justify-start">
