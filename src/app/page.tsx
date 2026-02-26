@@ -16,6 +16,7 @@ export default function Home() {
             <HowItWorks />
             <SocialLearning />
             <Analytics />
+            <Industries />
             <Integrations />
         </div>
     );
