@@ -15,6 +15,7 @@ export default function Home() {
             <Results />
             <HowItWorks />
             <SocialLearning />
+            <Analytics />
             <Integrations />
         </div>
     );

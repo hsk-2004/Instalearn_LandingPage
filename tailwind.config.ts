@@ -24,7 +24,8 @@ const config: Config = {
             fontFamily: {
                 sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
                 caveat: ["var(--font-caveat)", "cursive"],
-                patrick: ["var(--font-patrick-hand)", "cursive"],
+                patrickHand: ["var(--font-patrick-hand)", "cursive", "sans-serif"],
+                lexend: ["var(--font-lexend)", "sans-serif"],
             },
         },
     },

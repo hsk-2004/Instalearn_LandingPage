@@ -49,9 +49,9 @@ export default function Comparison() {
                                 </div>
                                 {/* Label Box */}
                                 <div
-                                    className="w-[140px] h-7 flex items-center justify-center rounded-xl text-[13px] font-bold text-[#5D4037] handwritten"
+                                    className="w-[140px] h-7 flex items-center justify-center rounded-xl text-[14px] leading-[20px] tracking-[-0.0024em] font-normal text-[#5D4037] font-lexend"
                                     style={{
-                                        backgroundColor: '#FFD8B1',
+                                        backgroundColor: '#FECE99',
                                         transform: `rotate(${item.rot}) rotate(${item.boxRot}) translateX(${item.xOffset})`,
                                         boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
                                     }}
@@ -99,9 +99,9 @@ export default function Comparison() {
                                 </div>
                                 {/* Label Box */}
                                 <div
-                                    className="w-[140px] h-7 flex items-center justify-center rounded-xl text-[13px] font-bold text-[#5D4037] handwritten"
+                                    className="w-[140px] h-7 flex items-center justify-center rounded-xl text-[14px] leading-[20px] tracking-[-0.0024em] font-normal text-[#5D4037] font-lexend"
                                     style={{
-                                        backgroundColor: '#FEC893',
+                                        backgroundColor: '#FECE99',
                                         transform: `rotate(${item.rot}) rotate(${item.boxRot}) translateX(${item.xOffset})`,
                                         boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
                                     }}
