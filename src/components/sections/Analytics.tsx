@@ -65,7 +65,7 @@ export default function Analytics() {
     ];
 
     return (
-        <section id="analytics" className={`py-24 px-6 flex flex-col items-center bg-[#FCF6E3] overflow-hidden ${lexend.className}`}>
+        <section id="analytics" className={`py-12 px-6 flex flex-col items-center bg-[#FCF6E3] overflow-hidden ${lexend.className}`}>
             {/* 1. Header Pill */}
             <div className="mb-10 bg-white border border-[#9C9184]/40 rounded-[14px] p-1">
                 <div className="bg-[#F4E9DB] border border-[#9C9184]/40 rounded-[10px] px-5 py-1 flex items-center justify-center">

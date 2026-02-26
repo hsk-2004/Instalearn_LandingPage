@@ -38,7 +38,7 @@ const industries = [
 
 export default function Industries() {
     return (
-        <section id="industries" className={`py-24 px-6 flex flex-col items-center bg-white overflow-hidden ${lexend.className}`}>
+        <section id="industries" className={`py-12 px-6 flex flex-col items-center bg-white overflow-hidden ${lexend.className}`}>
             {/* Header Badge */}
             <div className="mb-8 p-1 bg-white border border-[#9C9184]/30 rounded-[20px] shadow-sm">
                 <div className="bg-[#F4E9DB] border border-[#9C9184]/20 rounded-[15px] px-8 py-2.5 flex items-center justify-center">

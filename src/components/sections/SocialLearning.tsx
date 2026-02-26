@@ -35,7 +35,7 @@ export default function SocialLearning() {
     ];
 
     return (
-        <section className="py-24 px-6 flex flex-col items-center bg-white overflow-hidden">
+        <section className="py-12 px-6 flex flex-col items-center bg-white overflow-hidden">
             {/* 1. Quote Heading */}
             <div className="w-full flex flex-col items-center justify-center mb-8">
                 <h2 className={`text-[#CE510B] text-center text-[20px] md:text-[26px] font-normal leading-tight px-4 ${patrickHand.className}`}>

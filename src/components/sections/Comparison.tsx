@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Comparison() {
     return (
         <section className="py-12 bg-[#FCF6E3]">
-            <div className="flex flex-col items-center mb-16 px-4">
+            <div className="flex flex-col items-center mb-8 px-4">
                 {/* Comparison Pill */}
                 <div className="bg-white border border-[#E5E0D8] rounded-[18px] p-1.5 shadow-sm">
                     <div className="bg-[#F3E9DD] border border-[#DED4C7] rounded-[14px] px-5 py-2">
@@ -15,8 +15,8 @@ export default function Comparison() {
             </div>
 
             {/* Traditional LMS Section */}
-            <div className="mb-14">
-                <h3 className="text-[#5D4037] font-extrabold text-xl mb-12 px-6">Traditional LMS</h3>
+            <div className="mb-10">
+                <h3 className="text-[#5D4037] font-extrabold text-xl mb-4 px-6">Traditional LMS</h3>
 
                 <div className="flex overflow-x-auto pt-10 pb-8 snap-x no-scrollbar">
                     <div className="flex gap-0 px-6 min-w-full">
@@ -66,7 +66,7 @@ export default function Comparison() {
 
             {/* InstaLearn Section */}
             <div>
-                <h3 className="text-[#5D4037] font-extrabold text-xl mb-12 px-6">InstaLearn</h3>
+                <h3 className="text-[#5D4037] font-extrabold text-xl mb-4 px-6">InstaLearn</h3>
 
                 <div className="flex overflow-x-auto pt-10 pb-8 snap-x no-scrollbar">
                     <div className="flex gap-0 px-6 min-w-full">
