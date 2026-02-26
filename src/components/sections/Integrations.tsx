@@ -63,6 +63,7 @@ export default function Integrations() {
                         <div className="absolute top-[35%] left-1/2 -translate-x-1/2 w-[180%] h-[90%] border border-[#8B8374]/30 rounded-t-full border-b-0" />
                         <div className="absolute top-[45%] left-1/2 -translate-x-1/2 w-[140%] h-[70%] border border-[#8B8374]/30 rounded-t-full border-b-0" />
                         <div className="absolute top-[55%] left-1/2 -translate-x-1/2 w-[100%] h-[50%] border border-[#8B8374]/30 rounded-t-full border-b-0" />
+                        <div className="absolute top-[65%] left-1/2 -translate-x-1/2 w-[60%] h-[30%] border border-[#8B8374]/30 rounded-t-full border-b-0" />
 
                         {/* App Icons (Positioned according to mobile view image) */}
                         {apps.map((app) => (
