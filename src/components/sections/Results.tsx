@@ -6,14 +6,24 @@ export default function Results() {
     return (
         <section id="results" className="py-12 px-6 flex flex-col items-center bg-white overflow-hidden">
             {/* Results Pill */}
-            <div className="mb-12">
-                <Image
-                    src="/results.svg"
-                    alt="Results from InstaLearn"
-                    width={189}
-                    height={58}
-                    priority
-                />
+            <div className="mb-12 relative">
+                <div className="bg-white border border-[#9C9184]/30 rounded-[14px] p-1 flex items-center justify-center">
+                    <div className="bg-[#F4E9DB] border border-[#9C9184]/30 rounded-[12px] w-[174px] h-[45px] p-[6px] flex items-center justify-center gap-[10px]">
+                        <span className="text-[#8B8374] font-asap font-medium text-[16px] leading-[21px] tracking-[-0.32px] capitalize">
+                            Result From Instalearn
+                        </span>
+                    </div>
+                </div>
+
+                {/* Floating Icon */}
+                <div className="absolute -top-3 -right-3 w-[42px] h-[40px] z-10">
+                    <Image
+                        src="/hike.svg"
+                        alt="Hike Icon"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
             </div>
 
             {/* Scrollable Container with two rows */}

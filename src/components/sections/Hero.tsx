@@ -40,6 +40,15 @@ export default function Hero() {
                 AI powered micro learning directly through the tools your people already use.
             </p>
 
+            {/* ROI Button */}
+            <div className="mb-12">
+                <button className="flex items-center justify-center bg-white border border-[#181815] rounded-[56px] px-[24px] py-[12px] w-[200px] h-[46px] shadow-sm hover:shadow-md transition-all active:scale-95">
+                    <span className="text-[#181815] font-asap font-semibold text-[16px] leading-[22px]">
+                        Calculate Your ROI
+                    </span>
+                </button>
+            </div>
+
             {/* Main Image - No Box Container */}
             <div className="relative w-full max-w-[360px] mx-auto mt-2">
                 <img
