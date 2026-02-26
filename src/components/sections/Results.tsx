@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Results() {
     return (
-        <section className="py-12 px-4 flex flex-col items-center">
+        <section className="py-12 px-4 flex flex-col items-center bg-white">
             {/* Results Pill */}
             <div className="mb-12">
                 <Image

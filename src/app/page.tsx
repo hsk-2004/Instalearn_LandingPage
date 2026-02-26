@@ -9,7 +9,7 @@ import Integrations from "@/components/sections/Integrations";
 
 export default function Home() {
     return (
-        <div className="flex flex-col bg-brand-cream min-h-screen">
+        <div className="flex flex-col bg-white min-h-screen">
             <Hero />
             <Comparison />
             <Results />

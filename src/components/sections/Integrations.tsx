@@ -20,7 +20,7 @@ export default function Integrations() {
 
     return (
         <section className="bg-white overflow-hidden">
-            <div className="pt-20 pb-10 bg-[#FFF9EE]">
+            <div className="pt-20 pb-10 bg-[#FCF6E3]">
                 <div className="max-w-4xl mx-auto px-4 flex flex-col items-center">
                     {/* 1. Header Pill */}
                     <div className="mb-10 bg-white border border-[#E5E0D8] rounded-[18px] p-1.5 shadow-sm">
