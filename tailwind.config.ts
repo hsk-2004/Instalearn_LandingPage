@@ -21,6 +21,11 @@ const config: Config = {
                 "3xl": "1.5rem",
                 "4xl": "2rem",
             },
+            fontFamily: {
+                sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
+                caveat: ["var(--font-caveat)", "cursive"],
+                patrick: ["var(--font-patrick-hand)", "cursive"],
+            },
         },
     },
     plugins: [],

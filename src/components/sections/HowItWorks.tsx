@@ -11,6 +11,7 @@ export default function HowItWorks() {
                     alt="How It Works"
                     width={130}
                     height={40}
+                    style={{ height: 'auto' }}
                     priority
                 />
             </div>
@@ -24,17 +25,17 @@ export default function HowItWorks() {
             <div className="w-full flex flex-col gap-8 max-w-[400px]">
                 {/* Step 1: Create */}
                 <div className="relative">
-                    <Image src="/create.svg" alt="Create" width={400} height={140} className="w-full h-auto" />
+                    <Image src="/create.svg" alt="Create" width={400} height={140} className="w-full h-auto" style={{ height: 'auto' }} />
                 </div>
 
                 {/* Step 2: Share */}
                 <div className="relative">
-                    <Image src="/share.svg" alt="Share" width={400} height={140} className="w-full h-auto" />
+                    <Image src="/share.svg" alt="Share" width={400} height={140} className="w-full h-auto" style={{ height: 'auto' }} />
                 </div>
 
                 {/* Step 3: Track */}
                 <div className="relative">
-                    <Image src="/track.svg" alt="Track" width={400} height={140} className="w-full h-auto" />
+                    <Image src="/track.svg" alt="Track" width={400} height={140} className="w-full h-auto" style={{ height: 'auto' }} />
                 </div>
             </div>
         </section>

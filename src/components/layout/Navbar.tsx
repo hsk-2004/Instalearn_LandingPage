@@ -11,6 +11,7 @@ export default function Navbar() {
                             src="/logo.png"
                             alt="Instalearn Logo"
                             fill
+                            sizes="128px"
                             className="object-contain object-left"
                             priority
                         />
