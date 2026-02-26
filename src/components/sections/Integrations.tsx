@@ -23,36 +23,40 @@ export default function Integrations() {
             <div className="py-10 bg-[#FCF6E3]">
                 <div className="max-w-4xl mx-auto px-4 flex flex-col items-center">
                     {/* 1. Header Pill */}
-                    <div className="mb-10 bg-white border border-[#E5E0D8] rounded-[18px] p-1.5 shadow-sm">
-                        <div className="bg-[#F3E9DD] border border-[#DED4C7] rounded-[14px] px-6 py-2 flex items-center justify-center">
-                            <span className="text-[#8B8374] font-semibold text-[15px]">Integration & Security</span>
+                    <div className="mb-10">
+                        <div className="bg-white border border-[#9C9184]/30 rounded-[14px] p-1 flex items-center justify-center">
+                            <div className="bg-[#F4E9DB] border border-[#9C9184]/30 rounded-[12px] w-[210px] h-[45px] p-[6px] flex items-center justify-center">
+                                <span className="text-[#8B8374] font-asap font-medium text-[16px] leading-[21px] tracking-[-0.32px] capitalize">
+                                    Integration & Security
+                                </span>
+                            </div>
                         </div>
                     </div>
 
                     {/* 2. Heading */}
-                    <h2 className="text-[20px] md:text-[24px] font-semibold text-[#8B8374] text-center max-w-[300px] md:max-w-xl leading-relaxed mb-14">
+                    <h2 className="text-[20px] md:text-[24px] font-asap font-semibold text-[#8B8374] text-center max-w-[300px] md:max-w-xl leading-relaxed mb-14 px-4">
                         Seamlessly integrate with your existing systems without disrupting workflows.
                     </h2>
 
                     {/* 3. Staggered Tag Cloud */}
-                    <div className="flex flex-col gap-4 items-center mb-16 w-full max-w-[500px]">
+                    <div className="flex flex-col gap-4 items-center mb-16 w-full max-w-[550px] px-2">
                         {/* Row 1 */}
-                        <div className="flex gap-3 items-center w-full justify-start translate-x-4">
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-semibold text-[15px] shadow-sm whitespace-nowrap">Open APIs</div>
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-semibold text-[15px] shadow-sm whitespace-nowrap">Enterprise grade security</div>
-                            <div className="bg-[#FED8B1]/60 w-16 h-12 rounded-l-[16px] flex-shrink-0" />
+                        <div className="flex gap-3 items-center w-full justify-start translate-x-2 md:translate-x-6">
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">Open APIs</div>
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">Enterprise Grade Security</div>
+                            <div className="bg-[#FED8B1]/40 w-16 h-12 rounded-l-[16px] flex-shrink-0" />
                         </div>
                         {/* Row 2 */}
-                        <div className="flex gap-3 items-center w-full justify-end -translate-x-4">
-                            <div className="bg-[#FED8B1]/60 w-16 h-12 rounded-r-[16px] flex-shrink-0" />
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-semibold text-[15px] shadow-sm whitespace-nowrap">Performance systems</div>
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-semibold text-[15px] shadow-sm whitespace-nowrap">CRM integration</div>
+                        <div className="flex gap-3 items-center w-full justify-end -translate-x-2 md:-translate-x-6">
+                            <div className="bg-[#FED8B1]/40 w-16 h-12 rounded-r-[16px] flex-shrink-0" />
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">Performance Systems</div>
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">CRM Integration</div>
                         </div>
                         {/* Row 3 */}
-                        <div className="flex gap-3 items-center w-full justify-start translate-x-4">
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-semibold text-[15px] shadow-sm whitespace-nowrap">SSO & role based access</div>
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-semibold text-[15px] shadow-sm whitespace-nowrap">HRIS integration</div>
-                            <div className="bg-[#FED8B1]/60 w-16 h-12 rounded-l-[16px] flex-shrink-0" />
+                        <div className="flex gap-3 items-center w-full justify-end translate-x-12 md:translate-x-24">
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">SSO & Role Based Access</div>
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">HRIS Integration</div>
+                            <div className="bg-[#FED8B1]/40 w-16 h-12 rounded-l-[16px] flex-shrink-0" />
                         </div>
                     </div>
 
