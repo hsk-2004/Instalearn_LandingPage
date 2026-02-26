@@ -4,15 +4,25 @@ export default function Hero() {
     return (
         <section className="pt-32 pb-12 px-4 flex flex-col items-center text-center overflow-hidden">
             {/* Badge */}
-            <div className="mb-8">
-                <div className="w-56 h-12 relative flex items-center justify-center">
-                    <Image
-                        src="/mobilefirst.svg"
-                        alt="Mobile First Learning"
-                        fill
-                        className="object-contain"
-                        priority
-                    />
+            <div className="mb-12 relative flex justify-center w-full">
+                <div className="relative inline-flex items-center bg-[#FFF9F2] border border-[#FFD9B3] rounded-[56px] px-[24px] py-[8px] h-[37px] gap-[10px] shadow-sm">
+                    {/* Icon Placeholder - Positioned to the top left as requested */}
+                    <div className="absolute -left-2 -top-3 flex items-center justify-center">
+                        {/* Actual imported Mobile icon directly placed */}
+                        <div className="relative w-[38px] h-[38px] transform -rotate-12">
+                            <Image
+                                src="/mobile.svg"
+                                alt="Mobile Icon"
+                                fill
+                                className="object-contain"
+                                priority
+                            />
+                        </div>
+                    </div>
+                    {/* Text box */}
+                    <span className="text-[#1A1A1A] font-asap font-normal text-[16px] leading-[21px] tracking-[-0.0032em] ml-[14px] whitespace-nowrap">
+                        Mobile First Learning
+                    </span>
                 </div>
             </div>
 

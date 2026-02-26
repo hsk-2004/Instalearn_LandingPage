@@ -26,6 +26,7 @@ const config: Config = {
                 caveat: ["var(--font-caveat)", "cursive"],
                 patrickHand: ["var(--font-patrick-hand)", "cursive", "sans-serif"],
                 lexend: ["var(--font-lexend)", "sans-serif"],
+                asap: ["var(--font-asap)", "sans-serif"],
             },
         },
     },
