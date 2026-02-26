@@ -98,7 +98,7 @@ export default function Integrations() {
                                 {/* The Logo Image (No Box) */}
                                 <div className="relative flex items-center justify-center">
                                     <img
-                                        src="/logo.png"
+                                        src="/logo.svg"
                                         alt="Instalearn Logo"
                                         className="h-24 w-auto object-contain drop-shadow-xl"
                                     />

@@ -8,7 +8,7 @@ export default function Footer() {
                 {/* Logo Section */}
                 <div className="flex justify-start">
                     <Image
-                        src="/logo.png"
+                        src="/logo.svg"
                         alt="Instalearn Logo"
                         width={130}
                         height={43}

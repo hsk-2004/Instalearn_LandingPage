@@ -8,7 +8,7 @@ export default function Navbar() {
                 <div className="pl-2">
                     <div className="w-32 h-12 relative overflow-hidden">
                         <Image
-                            src="/logo.png"
+                            src="/logo.svg"
                             alt="Instalearn Logo"
                             fill
                             sizes="128px"
