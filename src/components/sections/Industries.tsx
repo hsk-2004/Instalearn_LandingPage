@@ -40,9 +40,9 @@ export default function Industries() {
     return (
         <section id="industries" className={`py-12 px-6 flex flex-col items-center bg-white overflow-hidden ${lexend.className}`}>
             {/* Header Badge */}
-            <div className="mb-8 p-1 bg-white border border-[#9C9184]/30 rounded-[20px] shadow-sm">
-                <div className="bg-[#F4E9DB] border border-[#9C9184]/20 rounded-[15px] px-8 py-2.5 flex items-center justify-center">
-                    <span className="text-[#8B8374] font-semibold text-[15px] md:text-[17px] tracking-tight whitespace-nowrap">
+            <div className="mb-8 p-1 bg-white border border-[#8A7B6A] rounded-[20px] shadow-sm">
+                <div className="bg-[#F4E9DB] border border-[#8A7B6A] rounded-[15px] px-8 py-2.5 flex items-center justify-center">
+                    <span className="text-[#9C9184] font-medium text-[16px] sm:text-[16px] md:text-[17px] lg:text-[19px] tracking-tight whitespace-nowrap">
                         Built For Frontline Teams
                     </span>
                 </div>
@@ -50,11 +50,10 @@ export default function Industries() {
 
             {/* Main Heading */}
             <h2
-                className="text-[#8B8374] text-center font-normal mb-16"
+                className="text-[#8B8374] text-center font-normal mb-16 text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px]"
                 style={{
                     width: '334px',
                     height: '44px',
-                    fontSize: '16px',
                     lineHeight: '22px',
                     letterSpacing: '0.0024em',
                 }}
@@ -72,7 +71,7 @@ export default function Industries() {
                             transform: `translate(${industry.x}, ${industry.y})`,
                         }}
                     >
-                        <span className="text-[#5D4037] font-bold text-[12px] leading-tight text-center w-full z-10">
+                        <span className="text-[#5D4037] font-bold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] leading-tight text-center w-full z-10">
                             {industry.name}
                         </span>
 
@@ -111,7 +110,7 @@ export default function Industries() {
 
                 {/* Text Container - Two Lines */}
                 <div className={`bg-[#F9F3DC] border border-[#DECFB1]/30 rounded-[20px] px-5 py-2.5 flex items-center shadow-sm ${patrickHand.className}`}>
-                    <span className="text-[#C25D23] text-[16px] md:text-[18px] font-medium leading-[1.2] text-left">
+                    <span className="text-[#C25D23] text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-medium leading-[1.2] text-left">
                         <span className="whitespace-nowrap">Fully supported on iOS and Android</span><br />
                         devices.
                     </span>

@@ -7,16 +7,16 @@ export default function Comparison() {
         <section className="py-12 bg-[#FCF6E3]">
             <div className="flex flex-col items-center mb-8 px-4">
                 {/* Comparison Pill */}
-                <div className="bg-white border border-[#E5E0D8] rounded-[18px] p-1.5 shadow-sm">
-                    <div className="bg-[#F3E9DD] border border-[#DED4C7] rounded-[14px] px-5 py-2">
-                        <span className="text-[15px] font-semibold text-[#8B8374]">Why you should switch to instalearn</span>
+                <div className="bg-white border border-[#8A7B6A] rounded-[18px] p-1.5 shadow-sm">
+                    <div className="bg-[#F3E9DD] border border-[#8A7B6A] rounded-[14px] px-5 py-2">
+                        <span className="text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-semibold text-[#8B8374]">Why you should switch to instalearn</span>
                     </div>
                 </div>
             </div>
 
             {/* Traditional LMS Section */}
             <div className="mb-10">
-                <h3 className="text-[#5D4037] font-extrabold text-xl mb-4 px-6">Traditional LMS</h3>
+                <h3 className="text-[#5D4037] font-extrabold text-[16px] sm:text-[22px] md:text-[24px] lg:text-[26px] mb-4 px-6">Traditional LMS</h3>
 
                 <div className="flex overflow-x-auto pt-10 pb-8 snap-x no-scrollbar">
                     <div className="flex gap-0 px-6 min-w-full">
@@ -49,7 +49,7 @@ export default function Comparison() {
                                 </div>
                                 {/* Label Box */}
                                 <div
-                                    className="w-[140px] h-7 flex items-center justify-center rounded-xl text-[14px] leading-[20px] tracking-[-0.0024em] font-normal text-[#5D4037] font-lexend"
+                                    className="w-[140px] h-7 flex items-center justify-center rounded-xl text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] leading-[20px] tracking-[-0.0024em] font-normal text-[#5D4037] font-lexend"
                                     style={{
                                         backgroundColor: '#FECE99',
                                         transform: `rotate(${item.rot}) rotate(${item.boxRot}) translateX(${item.xOffset})`,
@@ -66,7 +66,7 @@ export default function Comparison() {
 
             {/* InstaLearn Section */}
             <div>
-                <h3 className="text-[#5D4037] font-extrabold text-xl mb-4 px-6">InstaLearn</h3>
+                <h3 className="text-[#5D4037] font-extrabold text-[16px] sm:text-[22px] md:text-[24px] lg:text-[26px] mb-4 px-6">InstaLearn</h3>
 
                 <div className="flex overflow-x-auto pt-10 pb-8 snap-x no-scrollbar">
                     <div className="flex gap-0 px-6 min-w-full">
@@ -99,7 +99,7 @@ export default function Comparison() {
                                 </div>
                                 {/* Label Box */}
                                 <div
-                                    className="w-[140px] h-7 flex items-center justify-center rounded-xl text-[14px] leading-[20px] tracking-[-0.0024em] font-normal text-[#5D4037] font-lexend"
+                                    className="w-[140px] h-7 flex items-center justify-center rounded-xl text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] leading-[20px] tracking-[-0.0024em] font-normal text-[#5D4037] font-lexend"
                                     style={{
                                         backgroundColor: '#FECE99',
                                         transform: `rotate(${item.rot}) rotate(${item.boxRot}) translateX(${item.xOffset})`,

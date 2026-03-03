@@ -18,8 +18,8 @@ export default function Footer() {
 
                 {/* Quick Links */}
                 <div className="flex flex-col gap-3">
-                    <h3 className="text-base font-black text-[#5D4037]">Quick links</h3>
-                    <div className="flex flex-col gap-2 text-[#8B8374] font-semibold text-sm">
+                    <h3 className="text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-black text-[#5D4037]">Quick links</h3>
+                    <div className="flex flex-col gap-2 text-[#8B8374] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">
                         <a href="/" className="hover:text-[#5D4037] transition-colors">Home</a>
                         <a href="/calculate-roi" className="hover:text-[#5D4037] transition-colors">Calculate ROI</a>
                     </div>
@@ -27,27 +27,27 @@ export default function Footer() {
 
                 {/* Contact Section */}
                 <div className="flex flex-col gap-4">
-                    <h3 className="text-base font-black text-[#5D4037]">Contact</h3>
+                    <h3 className="text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-black text-[#5D4037]">Contact</h3>
                     <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-2.5 group">
                             <div className="p-1.5 rounded-lg group-hover:bg-white/50 transition-colors">
                                 <Mail size={16} className="text-[#D35400]" />
                             </div>
-                            <span className="text-[#5D4037] font-semibold text-sm">abzcompany@gmail.com</span>
+                            <span className="text-[#5D4037] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">abzcompany@gmail.com</span>
                         </div>
 
                         <div className="flex items-center gap-2.5 group">
                             <div className="p-1.5 rounded-lg group-hover:bg-white/50 transition-colors">
                                 <Phone size={16} className="text-[#D35400]" />
                             </div>
-                            <span className="text-[#5D4037] font-semibold text-sm">+91 9625-xxxxx</span>
+                            <span className="text-[#5D4037] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">+91 9625-xxxxx</span>
                         </div>
 
                         <div className="flex items-start gap-2.5 group pt-1">
                             <div className="p-1.5 rounded-lg group-hover:bg-white/50 transition-colors shrink-0">
                                 <MapPin size={16} className="text-[#D35400]" />
                             </div>
-                            <span className="text-[#5D4037] font-semibold text-sm leading-tight">
+                            <span className="text-[#5D4037] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] leading-tight">
                                 7349, D-7 Vasant Kunj New Delhi,<br />
                                 Delhi-110070
                             </span>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <div className="h-px bg-[#E5E0D8] w-full" />
 
                 {/* Copyright */}
-                <div className="text-[#8B8374] font-semibold text-xs">
+                <div className="text-[#8B8374] font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px]">
                     © 2026 Instalearn. All rights reserved.
                 </div>
             </div>

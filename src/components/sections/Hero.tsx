@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HeadingLogo from "@/components/HeadingLogo";
 
 export default function Hero() {
     return (
@@ -20,7 +21,7 @@ export default function Hero() {
                         </div>
                     </div>
                     {/* Text box */}
-                    <span className="text-[#1A1A1A] font-asap font-normal text-[16px] leading-[21px] tracking-[-0.0032em] ml-[14px] whitespace-nowrap">
+                    <span className="text-[#1A1A1A] font-asap font-normal text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] leading-[21px] tracking-[-0.0032em] ml-[14px] whitespace-nowrap">
                         Mobile First Learning
                     </span>
                 </div>
@@ -28,22 +29,18 @@ export default function Hero() {
 
             {/* Headline SVG */}
             <div className="mb-6 px-4 w-full flex justify-center">
-                <img
-                    src="/heading.svg"
-                    alt="Training that Actually reaches your Workforce"
-                    className="w-full max-w-[360px] h-auto object-contain"
-                />
+                <HeadingLogo className="w-full max-w-[360px] h-auto object-contain" />
             </div>
 
             {/* Subtext */}
-            <p className="text-[#8B8374] text-[16px] font-medium leading-relaxed max-w-[400px] mb-8 px-4">
+            <p className="text-[#8B8374] text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-medium leading-relaxed max-w-[400px] mb-8 px-4">
                 AI powered micro learning directly through the tools your people already use.
             </p>
 
             {/* ROI Button */}
             <div className="mb-12">
                 <button className="flex items-center justify-center bg-white border border-[#181815] rounded-[56px] px-[24px] py-[12px] w-[200px] h-[46px] shadow-sm hover:shadow-md transition-all active:scale-95">
-                    <span className="text-[#181815] font-asap font-semibold text-[16px] leading-[22px]">
+                    <span className="text-[#181815] font-asap font-semibold text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] leading-[22px]">
                         Calculate Your ROI
                     </span>
                 </button>

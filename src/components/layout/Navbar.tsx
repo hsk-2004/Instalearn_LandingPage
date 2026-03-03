@@ -19,7 +19,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Book a Demo - Right */}
-                <button className="bg-[#2D2D2D] hover:bg-black text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-md active:scale-95 transition-all">
+                <button className="bg-[#2D2D2D] hover:bg-black text-white px-6 py-2.5 rounded-full text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-bold shadow-md active:scale-95 transition-all">
                     Book a Demo
                 </button>
             </div>

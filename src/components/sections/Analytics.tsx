@@ -67,14 +67,14 @@ export default function Analytics() {
     return (
         <section id="analytics" className={`py-12 px-6 flex flex-col items-center bg-[#FCF6E3] overflow-hidden ${lexend.className}`}>
             {/* 1. Header Pill */}
-            <div className="mb-10 bg-white border border-[#9C9184]/40 rounded-[14px] p-1">
-                <div className="bg-[#F4E9DB] border border-[#9C9184]/40 rounded-[10px] px-5 py-1 flex items-center justify-center">
-                    <span className="text-[#9C9184] font-medium text-[15px] tracking-tight">Analytics That Drive Learning</span>
+            <div className="mb-10 bg-white border border-[#8A7B6A] rounded-[14px] p-1">
+                <div className="bg-[#F4E9DB] border border-[#8A7B6A] rounded-[10px] px-5 py-1 flex items-center justify-center">
+                    <span className="text-[#9C9184] font-medium text-[16px] sm:text-[16px] md:text-[17px] lg:text-[19px] tracking-tight">Analytics That Drive Learning</span>
                 </div>
             </div>
 
             {/* 2. Subtitle */}
-            <p className="text-[#8B8374] text-center text-[15px] md:text-[17px] font-normal max-w-[420px] mb-20 leading-relaxed">
+            <p className="text-[#8B8374] text-center text-[15px] sm:text-[16px] md:text-[17px] lg:text-[19px] font-normal max-w-[420px] mb-20 leading-relaxed">
                 Make data driven L&D decisions with real time insight into performance and skill development.
             </p>
 
@@ -111,7 +111,7 @@ export default function Analytics() {
                             className="bg-[#FECE99] rounded-[16px] px-4 py-3 md:px-5 md:py-3.5 shadow-sm min-w-[160px] md:min-w-[210px] flex items-center justify-center transition-transform hover:scale-[1.02]"
                             style={{ transform: `translate(${item.textX}, ${item.textY})` }}
                         >
-                            <span className="text-[#5D4037] font-semibold text-[14px] md:text-[16px] leading-snug text-center">
+                            <span className="text-[#5D4037] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] leading-snug text-center">
                                 {item.title}
                             </span>
                         </div>

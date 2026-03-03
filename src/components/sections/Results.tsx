@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function Results() {
     return (
-        <section id="results" className="py-12 px-6 flex flex-col items-center bg-white overflow-hidden">
+        <section id="results" className="py-12 flex flex-col items-center bg-white overflow-hidden">
             {/* Results Pill */}
             <div className="mb-12 relative">
-                <div className="bg-white border border-[#9C9184]/30 rounded-[14px] p-1 flex items-center justify-center">
-                    <div className="bg-[#F4E9DB] border border-[#9C9184]/30 rounded-[12px] w-[174px] h-[45px] p-[6px] flex items-center justify-center gap-[10px]">
-                        <span className="text-[#8B8374] font-asap font-medium text-[16px] leading-[21px] tracking-[-0.32px] capitalize">
+                <div className="bg-white border border-[#8A7B6A] rounded-[14px] p-1 flex items-center justify-center">
+                    <div className="bg-[#F4E9DB] border border-[#8A7B6A] rounded-[12px] w-[174px] h-[45px] p-[6px] flex items-center justify-center gap-[10px]">
+                        <span className="text-[#8B8374] font-asap font-medium text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] leading-[21px] tracking-[-0.32px] capitalize">
                             Result From Instalearn
                         </span>
                     </div>
@@ -33,10 +33,10 @@ export default function Results() {
                     <div className="flex gap-4">
                         {/* Card 1 - Small */}
                         <div className="w-[180px] h-[140px] bg-[#FEC893] rounded-[32px] p-6 flex flex-col justify-between shrink-0">
-                            <div className="text-4xl font-bold text-[#5D4037]">
+                            <div className="text-[36px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-bold text-[#5D4037]">
                                 80%+
                             </div>
-                            <div className="text-sm font-semibold text-[#5D4037] text-right">
+                            <div className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-semibold text-[#5D4037] text-right">
                                 Engagement rate
                             </div>
                         </div>
@@ -44,10 +44,10 @@ export default function Results() {
                         {/* Card 2 - Big */}
                         <div className="w-[280px] h-[140px] bg-[#FEC893] rounded-[32px] p-6 flex flex-col justify-between shrink-0">
                             <div className="flex items-baseline gap-1">
-                                <div className="text-4xl font-bold text-[#5D4037]">4x</div>
-                                <div className="text-xl font-medium text-[#5D4037] opacity-60">higher</div>
+                                <div className="text-[36px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-bold text-[#5D4037]">4x</div>
+                                <div className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-medium text-[#5D4037] opacity-60">higher</div>
                             </div>
-                            <div className="text-sm font-semibold text-[#5D4037] text-right">
+                            <div className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-semibold text-[#5D4037] text-right">
                                 Completion vs LMS
                             </div>
                         </div>
@@ -58,10 +58,10 @@ export default function Results() {
                         {/* Card 3 - Big */}
                         <div className="w-[300px] h-[140px] bg-[#FEC893] rounded-[32px] p-6 flex flex-col justify-between shrink-0">
                             <div className="flex items-baseline gap-2">
-                                <div className="text-4xl font-bold text-[#5D4037]">3-5</div>
-                                <div className="text-xl font-medium text-[#5D4037] opacity-60">min</div>
+                                <div className="text-[36px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-bold text-[#5D4037]">3-5</div>
+                                <div className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-medium text-[#5D4037] opacity-60">min</div>
                             </div>
-                            <div className="text-sm font-semibold text-[#5D4037] text-right">
+                            <div className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-semibold text-[#5D4037] text-right">
                                 Average lesson time
                             </div>
                         </div>
@@ -69,10 +69,10 @@ export default function Results() {
                         {/* Card 4 - Small */}
                         <div className="w-[180px] h-[140px] bg-[#FEC893] rounded-[32px] p-6 flex flex-col justify-between shrink-0">
                             <div className="flex items-baseline gap-1">
-                                <div className="text-4xl font-bold text-[#5D4037]">2-3</div>
-                                <div className="text-xl font-medium text-[#5D4037] opacity-60">min</div>
+                                <div className="text-[36px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-bold text-[#5D4037]">2-3</div>
+                                <div className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-medium text-[#5D4037] opacity-60">min</div>
                             </div>
-                            <div className="text-sm font-semibold text-[#5D4037] text-right">
+                            <div className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-semibold text-[#5D4037] text-right">
                                 Content creation
                             </div>
                         </div>

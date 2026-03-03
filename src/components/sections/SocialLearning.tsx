@@ -38,23 +38,24 @@ export default function SocialLearning() {
         <section className="py-12 px-6 flex flex-col items-center bg-white overflow-hidden">
             {/* 1. Quote Heading */}
             <div className="w-full flex flex-col items-center justify-center mb-8">
-                <h2 className={`text-[#CE510B] text-center text-[20px] md:text-[26px] font-normal leading-tight px-4 ${patrickHand.className}`}>
+                <h2 className={`text-[#CE510B] text-center text-[20px] sm:text-[23px] md:text-[26px] lg:text-[30px] font-normal leading-tight px-4 ${patrickHand.className}`}>
                     <div className="whitespace-nowrap">"Training That Spreads Through You Organisation</div>
                     <div className="whitespace-nowrap">The Way Information Does Through WhatsApp"</div>
                 </h2>
             </div>
 
             {/* 2. Header Pill */}
-            <div className="mb-10 bg-white border border-[#9C9184]/40 rounded-[14px] p-1">
-                <div className="bg-[#F4E9DB] border border-[#9C9184]/40 rounded-[10px] px-5 py-1 flex items-center justify-center">
-                    <span className="text-[#9C9184] font-medium text-[15px] tracking-tight">Learning That Spreads Naturally</span>
+            <div className="mb-10 bg-white border border-[#8A7B6A] rounded-[14px] p-1">
+                <div className="bg-[#F4E9DB] border border-[#8A7B6A] rounded-[10px] px-5 py-1 flex items-center justify-center">
+                    <span className="text-[#9C9184] font-medium text-[16px] sm:text-[16px] md:text-[17px] lg:text-[19px] tracking-tight">Learning That Spreads Naturally</span>
                 </div>
             </div>
 
             {/* 3. Subtitle */}
-            <p className="text-[#8B8374] text-center text-[14px] md:text-[16px] font-medium max-w-[320px] md:max-w-[450px] mb-16 leading-relaxed opacity-90">
-                InstaLearn combines AI driven micro learning with social learning
-            </p>
+            <div className="text-[#8B8374] text-[16px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-medium mb-16 leading-relaxed opacity-90 flex flex-col items-center w-full">
+                <span className="whitespace-nowrap">InstaLearn combines AI driven micro learning</span>
+                <span className="whitespace-nowrap">with social learning</span>
+            </div>
 
             {/* 4. Staggered Items - Spreading naturally but Right Aligned */}
             <div className="w-full max-w-[480px] flex flex-col gap-10 items-end">
@@ -78,7 +79,7 @@ export default function SocialLearning() {
 
                         {/* Content Box */}
                         <div className={`bg-[#F2E9DD] shadow-sm border border-[#DED4C7]/40 transition-all hover:bg-[#EFE4D5] flex flex-col items-center justify-center rounded-[12px] px-[12px] py-[16px] min-h-[53px]`}>
-                            <span className={`text-[#5D4037] font-semibold text-[15px] md:text-[16px] leading-tight block text-center`}>
+                            <span className={`text-[#5D4037] font-semibold text-[15px] sm:text-[15.5px] md:text-[16px] lg:text-[18px] leading-tight block text-center`}>
                                 {item.title}
                             </span>
                         </div>

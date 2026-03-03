@@ -24,9 +24,9 @@ export default function Integrations() {
                 <div className="max-w-4xl mx-auto px-4 flex flex-col items-center">
                     {/* 1. Header Pill */}
                     <div className="mb-10">
-                        <div className="bg-white border border-[#9C9184]/30 rounded-[14px] p-1 flex items-center justify-center">
-                            <div className="bg-[#F4E9DB] border border-[#9C9184]/30 rounded-[12px] w-[210px] h-[45px] p-[6px] flex items-center justify-center">
-                                <span className="text-[#8B8374] font-asap font-medium text-[16px] leading-[21px] tracking-[-0.32px] capitalize">
+                        <div className="bg-white border border-[#8A7B6A] rounded-[14px] p-1 flex items-center justify-center">
+                            <div className="bg-[#F4E9DB] border border-[#8A7B6A] rounded-[12px] w-[210px] h-[45px] p-[6px] flex items-center justify-center">
+                                <span className="text-[#8B8374] font-asap font-medium text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] leading-[21px] tracking-[-0.32px] capitalize">
                                     Integration & Security
                                 </span>
                             </div>
@@ -34,28 +34,29 @@ export default function Integrations() {
                     </div>
 
                     {/* 2. Heading */}
-                    <h2 className="text-[20px] md:text-[24px] font-asap font-semibold text-[#8B8374] text-center max-w-[300px] md:max-w-xl leading-relaxed mb-14 px-4">
-                        Seamlessly integrate with your existing systems without disrupting workflows.
+                    <h2 className="text-[16px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-asap font-semibold text-[#8B8374] text-center max-w-[300px] md:max-w-xl leading-relaxed mb-14 px-4">
+                        <div className="whitespace-nowrap">Seamlessly integrate with your existing</div>
+                        <div className="whitespace-nowrap">systems without disrupting workflows.</div>
                     </h2>
 
                     {/* 3. Staggered Tag Cloud */}
                     <div className="flex flex-col gap-4 items-center mb-16 w-full max-w-[550px] px-2">
                         {/* Row 1 */}
                         <div className="flex gap-3 items-center w-full justify-start translate-x-2 md:translate-x-6">
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">Open APIs</div>
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">Enterprise Grade Security</div>
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">Open APIs</div>
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">Enterprise Grade Security</div>
                             <div className="bg-[#FED8B1]/40 w-16 h-12 rounded-l-[16px] flex-shrink-0" />
                         </div>
                         {/* Row 2 */}
                         <div className="flex gap-3 items-center w-full justify-end -translate-x-2 md:-translate-x-6">
                             <div className="bg-[#FED8B1]/40 w-16 h-12 rounded-r-[16px] flex-shrink-0" />
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">Performance Systems</div>
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">CRM Integration</div>
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">Performance Systems</div>
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">CRM Integration</div>
                         </div>
                         {/* Row 3 */}
                         <div className="flex gap-3 items-center w-full justify-end translate-x-12 md:translate-x-24">
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">SSO & Role Based Access</div>
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] md:text-[15px] shadow-sm whitespace-nowrap">HRIS Integration</div>
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">SSO & Role Based Access</div>
+                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">HRIS Integration</div>
                             <div className="bg-[#FED8B1]/40 w-16 h-12 rounded-l-[16px] flex-shrink-0" />
                         </div>
                     </div>
