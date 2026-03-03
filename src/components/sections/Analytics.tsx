@@ -69,7 +69,7 @@ export default function Analytics() {
             {/* 1. Header Pill */}
             <div className="mb-10 bg-white border border-[#8A7B6A] rounded-[14px] p-1">
                 <div className="bg-[#F4E9DB] border border-[#8A7B6A] rounded-[10px] px-5 py-1 flex items-center justify-center">
-                    <span className="text-[#9C9184] font-medium text-[16px] sm:text-[16px] md:text-[17px] lg:text-[19px] tracking-tight">Analytics That Drive Learning</span>
+                    <span className="text-[#9C9184] font-asap font-medium text-[16px] sm:text-[16px] md:text-[17px] lg:text-[19px] tracking-tight">Analytics That Drive Learning</span>
                 </div>
             </div>
 

@@ -42,7 +42,7 @@ export default function Industries() {
             {/* Header Badge */}
             <div className="mb-8 p-1 bg-white border border-[#8A7B6A] rounded-[20px] shadow-sm">
                 <div className="bg-[#F4E9DB] border border-[#8A7B6A] rounded-[15px] px-8 py-2.5 flex items-center justify-center">
-                    <span className="text-[#9C9184] font-medium text-[16px] sm:text-[16px] md:text-[17px] lg:text-[19px] tracking-tight whitespace-nowrap">
+                    <span className="text-[#9C9184] font-asap font-medium text-[16px] sm:text-[16px] md:text-[17px] lg:text-[19px] tracking-tight whitespace-nowrap">
                         Built For Frontline Teams
                     </span>
                 </div>
