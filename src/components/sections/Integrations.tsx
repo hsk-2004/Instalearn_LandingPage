@@ -34,13 +34,13 @@ export default function Integrations() {
                     </div>
 
                     {/* 2. Heading */}
-                    <h2 className="text-[16px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-asap font-semibold text-[#8B8374] text-center max-w-[300px] md:max-w-xl leading-relaxed mb-14 px-4">
+                    <h2 className="text-[16px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-asap font-semibold text-[#8B8374] text-center max-w-[300px] md:max-w-xl leading-relaxed mb-6 px-4">
                         <div className="whitespace-nowrap">Seamlessly integrate with your existing</div>
                         <div className="whitespace-nowrap">systems without disrupting workflows.</div>
                     </h2>
 
                     {/* 3. Staggered Tag Cloud */}
-                    <div className="flex flex-col gap-4 items-center mb-16 w-full max-w-[550px] px-2">
+                    <div className="flex flex-col gap-4 items-center mb-0 w-full max-w-[550px] px-2 relative z-30">
                         {/* Row 1 */}
                         <div className="flex gap-3 items-center w-full justify-start translate-x-2 md:translate-x-6">
                             <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">Open APIs</div>
@@ -62,12 +62,13 @@ export default function Integrations() {
                     </div>
 
                     {/* 4. Orbital Diagram Area */}
-                    <div className="relative w-full max-w-[380px] aspect-[1/1.2] mt-4">
-                        {/* Concentric Orbits (Arches) */}
-                        <div className="absolute top-[25%] left-1/2 -translate-x-1/2 w-[220%] h-[110%] border border-[#8B8374]/30 rounded-t-full border-b-0" />
-                        <div className="absolute top-[35%] left-1/2 -translate-x-1/2 w-[180%] h-[90%] border border-[#8B8374]/30 rounded-t-full border-b-0" />
-                        <div className="absolute top-[45%] left-1/2 -translate-x-1/2 w-[140%] h-[70%] border border-[#8B8374]/30 rounded-t-full border-b-0" />
-                        <div className="absolute top-[55%] left-1/2 -translate-x-1/2 w-[100%] h-[50%] border border-[#8B8374]/30 rounded-t-full border-b-0" />
+                    <div className="relative w-full max-w-[380px] aspect-[1/1.2] -mt-28">
+                        {/* Background Ellipse SVG */}
+                        <img
+                            src="/ellipse.svg"
+                            alt="Background Ellipse"
+                            className="absolute top-0 left-1/2 -translate-x-1/2 w-[220%] h-[110%] object-contain pointer-events-none z-0"
+                        />
 
                         {/* App Icons (Positioned according to mobile view image) */}
                         {apps.map((app) => (
@@ -97,7 +98,7 @@ export default function Integrations() {
                         ))}
 
                         {/* Central Area Hub (Bottom) */}
-                        <div className="absolute bottom-[-15px] left-1/2 -translate-x-1/2 w-full flex flex-col items-center z-10">
+                        <div className="absolute bottom-[-65px] left-1/2 -translate-x-1/2 w-full flex flex-col items-center z-10">
                             {/* The Hub Component */}
                             <div className="relative flex flex-col items-center mb-8">
                                 {/* The Logo Image (No Box) */}
@@ -105,7 +106,7 @@ export default function Integrations() {
                                     <img
                                         src="/logo.svg"
                                         alt="Instalearn Logo"
-                                        className="h-24 w-auto object-contain drop-shadow-xl"
+                                        className="h-16 lg:h-14 w-auto object-contain drop-shadow-xl"
                                     />
                                 </div>
                             </div>
