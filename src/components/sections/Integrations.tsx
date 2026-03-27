@@ -2,121 +2,82 @@
 
 import Image from "next/image";
 
+const tags = [
+    { text: "Open APIs", className: "w-fit" },
+    { text: "Enterprise grade security", className: "w-fit" },
+    { text: "Performance systems", className: "w-fit" },
+    { text: "CRM integration", className: "w-fit" },
+    { text: "SSO & role based access", className: "w-fit" },
+    { text: "HRIS integration", className: "w-fit" },
+];
+
+const orbitIcons = [
+    { src: "/whatsapp.svg", top: "10%", left: "30%", color: "bg-white" },
+    { src: "/calender.svg", top: "25%", left: "60%", color: "bg-white" },
+    { src: "/slack.svg", top: "50%", left: "80%", color: "bg-white" },
+    { src: "/gmail.svg", top: "45%", left: "10%", color: "bg-white" },
+    { src: "/telegram.svg", top: "80%", left: "15%", color: "bg-white" },
+    { src: "/logo.svg", top: "15%", left: "85%", color: "bg-white" }, // Proxy for Teams
+];
+
 export default function Integrations() {
-    const tags = [
-        ["Open APIs", "Enterprise grade security"],
-        ["Performance systems", "CRM integration"],
-        ["SSO & role based access", "HRIS integration"]
-    ];
-
-    const apps = [
-        { name: "Placeholder 1", icon: "/whatsapp.svg", top: "32%", left: "70%", size: "56px" },
-        { name: "Placeholder 2", icon: "/gmail.svg", top: "35%", left: "8%", size: "52px" },
-        { name: "Placeholder 3", icon: "/telegram.svg", top: "38%", left: "35%", size: "52px" },
-        { name: "Placeholder 4", icon: "/link.svg", top: "50%", left: "85%", size: "54px" },
-        { name: "Placeholder 5", icon: "/slack.svg", top: "55%", left: "20%", size: "48px" },
-        { name: "Placeholder 6", icon: "/calender.svg", top: "55%", left: "65%", size: "50px" },
-    ];
-
     return (
-        <section className="bg-white overflow-hidden">
-            <div className="py-10 bg-[#FCF6E3]">
-                <div className="max-w-4xl mx-auto px-4 flex flex-col items-center">
-                    {/* 1. Header Pill */}
-                    <div className="mb-10">
-                        <div className="bg-white border border-[#8A7B6A] rounded-[14px] p-1 flex items-center justify-center">
-                            <div className="bg-[#F4E9DB] border border-[#8A7B6A] rounded-[12px] w-[210px] h-[45px] p-[6px] flex items-center justify-center">
-                                <span className="text-[#8B8374] font-asap font-medium text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] leading-[21px] tracking-[-0.32px] capitalize">
-                                    Integration & Security
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* 2. Heading */}
-                    <h2 className="text-[16px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-asap font-semibold text-[#8B8374] text-center max-w-[300px] md:max-w-xl leading-relaxed mb-6 px-4">
-                        <div className="whitespace-nowrap">Seamlessly integrate with your existing</div>
-                        <div className="whitespace-nowrap">systems without disrupting workflows.</div>
+        <section id="integrations" className="bg-[#FCF6E3] py-24 px-6 lg:px-[120px] overflow-hidden">
+            <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+                
+                {/* Left Content */}
+                <div className="w-full lg:w-[45%] flex flex-col items-start text-left">
+                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[48px] lg:text-[64px] leading-[1.1] tracking-tight mb-6">
+                        Integration & Security
                     </h2>
+                    <p className="text-[#8B8374] font-medium text-[16px] lg:text-[20px] leading-relaxed mb-16 max-w-[450px]">
+                        Seamlessly integrate with your existing systems without disrupting workflows.
+                    </p>
 
-                    {/* 3. Staggered Tag Cloud */}
-                    <div className="flex flex-col gap-4 items-center mb-0 w-full max-w-[550px] px-2 relative z-30">
-                        {/* Row 1 */}
-                        <div className="flex gap-3 items-center w-full justify-start translate-x-2 md:translate-x-6">
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">Open APIs</div>
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">Enterprise Grade Security</div>
-                            <div className="bg-[#FED8B1]/40 w-16 h-12 rounded-l-[16px] flex-shrink-0" />
-                        </div>
-                        {/* Row 2 */}
-                        <div className="flex gap-3 items-center w-full justify-end -translate-x-2 md:-translate-x-6">
-                            <div className="bg-[#FED8B1]/40 w-16 h-12 rounded-r-[16px] flex-shrink-0" />
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">Performance Systems</div>
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">CRM Integration</div>
-                        </div>
-                        {/* Row 3 */}
-                        <div className="flex gap-3 items-center w-full justify-end translate-x-12 md:translate-x-24">
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">SSO & Role Based Access</div>
-                            <div className="bg-[#FED8B1] px-5 py-3 rounded-[16px] text-[#5D4037] font-asap font-semibold text-[14px] sm:text-[14.5px] md:text-[15px] lg:text-[17px] shadow-sm whitespace-nowrap">HRIS Integration</div>
-                            <div className="bg-[#FED8B1]/40 w-16 h-12 rounded-l-[16px] flex-shrink-0" />
-                        </div>
-                    </div>
-
-                    {/* 4. Orbital Diagram Area */}
-                    <div className="relative w-full max-w-[380px] aspect-[1/1.2] -mt-28">
-                        {/* Background Ellipse SVG */}
-                        <img
-                            src="/ellipse.svg"
-                            alt="Background Ellipse"
-                            className="absolute top-0 left-1/2 -translate-x-1/2 w-[220%] h-[110%] object-contain pointer-events-none z-0"
-                        />
-
-                        {/* App Icons (Positioned according to mobile view image) */}
-                        {apps.map((app) => (
-                            <div
-                                key={app.name}
-                                className={`absolute flex items-center justify-center z-20 ${!app.icon ? "bg-white p-2 rounded-full shadow-md border border-[#E5E0D8]/50 overflow-hidden" : "overflow-visible"
-                                    }`}
-                                style={{
-                                    top: app.top,
-                                    left: app.left,
-                                    width: app.size,
-                                    height: app.size
-                                }}
+                    {/* Tags Grid */}
+                    <div className="flex flex-wrap gap-4 max-w-[550px]">
+                        {tags.map((tag, idx) => (
+                            <div 
+                                key={idx} 
+                                className={`${tag.className} bg-[#FF7F1E] text-white px-6 py-3 rounded-[12px] font-lexend font-bold text-[14px] lg:text-[18px] shadow-sm transform transition-all hover:-translate-y-1 hover:brightness-110 cursor-default`}
                             >
-                                {app.icon ? (
-                                    <img
-                                        src={app.icon}
-                                        alt={app.name}
-                                        className="w-full h-full object-contain drop-shadow-sm"
-                                    />
-                                ) : (
-                                    <div className="w-[60%] h-[60%] border-2 border-dashed border-[#E5E0D8] rounded-full flex items-center justify-center">
-                                        <span className="text-[#DED4C7] text-[18px]">+</span>
-                                    </div>
-                                )}
+                                {tag.text}
                             </div>
                         ))}
+                    </div>
+                </div>
 
-                        {/* Central Area Hub (Bottom) */}
-                        <div className="absolute bottom-[-65px] left-1/2 -translate-x-1/2 w-full flex flex-col items-center z-10">
-                            {/* The Hub Component */}
-                            <div className="relative flex flex-col items-center mb-8">
-                                {/* The Logo Image (No Box) */}
-                                <div className="relative flex items-center justify-center">
-                                    <img
-                                        src="/logo.svg"
-                                        alt="Instalearn Logo"
-                                        className="h-16 lg:h-14 w-auto object-contain drop-shadow-xl"
-                                    />
+                {/* Right Visual Orbital Area */}
+                <div className="w-full lg:w-[50%] h-[400px] lg:h-[600px] relative flex items-center justify-center">
+                    {/* Concentric Rings */}
+                    <div className="absolute w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] border border-[#DECFB1]/60 rounded-full" />
+                    <div className="absolute w-[450px] h-[450px] lg:w-[700px] lg:h-[700px] border border-[#DECFB1]/40 rounded-full" />
+                    <div className="absolute w-[600px] h-[600px] lg:w-[900px] lg:h-[900px] border border-[#DECFB1]/20 rounded-full" />
+
+                    {/* Orbiting Icons */}
+                    <div className="absolute inset-0">
+                        {orbitIcons.map((icon, idx) => (
+                            <div 
+                                key={idx}
+                                className={`absolute ${icon.color} p-3 lg:p-4 rounded-[16px] shadow-xl border border-white/40 transform transition-all duration-700 hover:scale-125 z-20`}
+                                style={{ top: icon.top, left: icon.left }}
+                            >
+                                <div className="w-8 h-8 lg:w-10 lg:h-10 relative">
+                                    <Image src={icon.src} alt="Integration" fill className="object-contain" />
                                 </div>
                             </div>
+                        ))}
+                    </div>
+
+                    {/* Central Hub */}
+                    <div className="relative z-10 bg-white p-6 rounded-[24px] shadow-2xl border border-[#DECFB1]/50 transform -rotate-6">
+                        <div className="w-[140px] lg:w-[180px] h-[40px] lg:h-[50px] relative">
+                            <Image src="/logo.svg" alt="Instalearn Hub" fill className="object-contain" />
                         </div>
                     </div>
                 </div>
             </div>
-
-            {/* Full-width Bottom Border (Exactly at the color transition) */}
-            <div className="w-full border-t-2 border-[#8B8374]/30 relative z-20" />
         </section>
     );
 }
+

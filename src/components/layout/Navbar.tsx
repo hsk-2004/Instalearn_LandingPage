@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-32px)] max-w-7xl z-50">
+        <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-32px)] max-w-7xl lg:max-w-[574px] z-50">
             <div className="bg-white/80 backdrop-blur-xl border border-white/20 rounded-full p-1.5 flex justify-between items-center shadow-lg">
                 {/* Logo Section - Left */}
                 <div className="pl-2">

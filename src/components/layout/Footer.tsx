@@ -1,65 +1,60 @@
+"use client";
+
 import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="px-6 py-8 bg-white">
-            <div className="bg-[#EFE3D4] border border-[#E5E0D8] rounded-[24px] p-6 max-w-[340px] flex flex-col gap-6">
-                {/* Logo Section */}
-                <div className="flex justify-start">
-                    <Image
-                        src="/logo.svg"
-                        alt="Instalearn Logo"
-                        width={130}
-                        height={43}
-                        className="object-contain -ml-1"
-                    />
-                </div>
-
-                {/* Quick Links */}
-                <div className="flex flex-col gap-3">
-                    <h3 className="text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-black text-[#5D4037]">Quick links</h3>
-                    <div className="flex flex-col gap-2 text-[#8B8374] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">
-                        <a href="/" className="hover:text-[#5D4037] transition-colors">Home</a>
-                        <a href="/calculate-roi" className="hover:text-[#5D4037] transition-colors">Calculate ROI</a>
+        <footer className="bg-white py-12 px-6 lg:px-[120px]">
+            <div className="bg-[#FECE99] rounded-[32px] p-8 lg:p-16 max-w-[1440px] mx-auto flex flex-col gap-12 shadow-sm">
+                
+                {/* Main Content Row */}
+                <div className="flex flex-col lg:flex-row justify-start lg:gap-32 gap-12">
+                    
+                    {/* Logo & Quick Links */}
+                    <div className="flex flex-col gap-8 md:min-w-[200px]">
+                        <Image 
+                            src="/logo.svg" 
+                            alt="Instalearn Logo" 
+                            width={160} 
+                            height={50} 
+                            className="object-contain"
+                        />
+                        <div className="flex flex-col gap-3">
+                            <h3 className="text-[#3D2C1E] font-bold text-[18px] lg:text-[20px]">Quick links</h3>
+                            <a href="/" className="text-[#CE510B] font-medium text-[16px] lg:text-[18px] hover:opacity-80 transition-opacity">Home</a>
+                            <a href="/calculate-roi" className="text-[#CE510B] font-medium text-[16px] lg:text-[18px] hover:opacity-80 transition-opacity">Calculate ROI</a>
+                        </div>
                     </div>
-                </div>
 
-                {/* Contact Section */}
-                <div className="flex flex-col gap-4">
-                    <h3 className="text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-black text-[#5D4037]">Contact</h3>
-                    <div className="flex flex-col gap-3">
-                        <div className="flex items-center gap-2.5 group">
-                            <div className="p-1.5 rounded-lg group-hover:bg-white/50 transition-colors">
-                                <Mail size={16} className="text-[#D35400]" />
+                    {/* Contact Section */}
+                    <div className="flex flex-col gap-6">
+                        <h3 className="text-[#3D2C1E] font-bold text-[18px] lg:text-[20px]">Contact</h3>
+                        <div className="flex flex-col gap-4">
+                            <div className="flex items-center gap-3">
+                                <Mail size={20} className="text-[#CE510B]" />
+                                <span className="text-[#CE510B] font-medium text-[16px] lg:text-[18px]">abzcompany@gmail.com</span>
                             </div>
-                            <span className="text-[#5D4037] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">abzcompany@gmail.com</span>
-                        </div>
-
-                        <div className="flex items-center gap-2.5 group">
-                            <div className="p-1.5 rounded-lg group-hover:bg-white/50 transition-colors">
-                                <Phone size={16} className="text-[#D35400]" />
+                            <div className="flex items-center gap-3">
+                                <Phone size={20} className="text-[#CE510B]" />
+                                <span className="text-[#CE510B] font-medium text-[16px] lg:text-[18px]">+91 9625 xxxxx</span>
                             </div>
-                            <span className="text-[#5D4037] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">+91 9625-xxxxx</span>
-                        </div>
-
-                        <div className="flex items-start gap-2.5 group pt-1">
-                            <div className="p-1.5 rounded-lg group-hover:bg-white/50 transition-colors shrink-0">
-                                <MapPin size={16} className="text-[#D35400]" />
+                            <div className="flex items-start gap-3">
+                                <MapPin size={20} className="text-[#CE510B] mt-1 shrink-0" />
+                                <span className="text-[#CE510B] font-medium text-[16px] lg:text-[18px] leading-relaxed">
+                                    7349, D-7 Vasant Kunj New <br className="hidden lg:block" />
+                                    Delhi, Delhi-110070
+                                </span>
                             </div>
-                            <span className="text-[#5D4037] font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] leading-tight">
-                                7349, D-7 Vasant Kunj New Delhi,<br />
-                                Delhi-110070
-                            </span>
                         </div>
                     </div>
                 </div>
 
-                {/* Separator */}
-                <div className="h-px bg-[#E5E0D8] w-full" />
+                {/* Footer Divider */}
+                <div className="w-full h-[1px] bg-[#3D2C1E]/10" />
 
-                {/* Copyright */}
-                <div className="text-[#8B8374] font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px]">
+                {/* Copyright Section */}
+                <div className="text-[#CE510B] font-bold text-[16px] lg:text-[20px]">
                     © 2026 Instalearn. All rights reserved.
                 </div>
             </div>
