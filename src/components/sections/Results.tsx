@@ -22,7 +22,7 @@ export default function Results() {
                     <div className="lg:hidden w-full overflow-x-auto pb-4 scrollbar-hide">
                         <div className="w-[361px] h-[252px] relative shrink-0">
                             <Image
-                                src="/metrics1.svg"
+                                src="/Metrics.svg"
                                 alt="Metrics visualization"
                                 width={361}
                                 height={252}
