@@ -4,23 +4,36 @@ import Image from "next/image";
 
 export default function Results() {
     return (
-        <section id="results" className="py-24 px-6 lg:px-[120px] bg-white overflow-hidden">
+        <section id="results" className="py-24 px-0 lg:px-[120px] bg-white overflow-hidden">
             <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-16 lg:gap-24">
                 
                 {/* Left Content */}
-                <div className="w-full lg:w-[45%] flex flex-col text-center lg:text-left">
+                <div className="w-full lg:w-[45%] flex flex-col text-center lg:text-left px-6 lg:px-0">
                     <h2 className="text-[#3D2C1E] font-lexend font-normal text-[48px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] mb-8">
                         What Teams <br />
                         Achieve with <br />
                         InstaLearn
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-[1.6] max-w-[540px] opacity-80">
+                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0">
                         Short lessons, mobile access, AI-powered creation drive engagement & faster team training.
                     </p>
+
+                    {/* Mobile Metrics SVG (Shown only on mobile) */}
+                    <div className="lg:hidden w-full overflow-x-auto pb-4 scrollbar-hide">
+                        <div className="w-[361px] h-[252px] relative shrink-0">
+                            <Image 
+                                src="/metrics.svg"
+                                alt="Metrics visualization"
+                                width={361}
+                                height={252}
+                                className="object-contain"
+                            />
+                        </div>
+                    </div>
                 </div>
 
-                {/* Right Content - Stats Grid */}
-                <div className="w-full lg:w-[55%] flex flex-col gap-2 lg:gap-2.5">
+                {/* Right Content - Stats Grid (Hidden on mobile) */}
+                <div className="hidden lg:flex lg:w-[55%] flex-col gap-2 lg:gap-2.5">
                     
                     {/* Top Row */}
                     <div className="flex flex-col sm:flex-row gap-2 lg:gap-2.5">
