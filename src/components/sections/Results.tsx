@@ -14,8 +14,10 @@ export default function Results() {
                         Achieve with <br />
                         InstaLearn
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0">
-                        Short lessons, mobile access, AI-powered creation drive engagement & faster team training.
+                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0 lg:whitespace-nowrap">
+                        Short lessons, mobile access, AI-powered <br className="hidden lg:block" />
+                        creation drive engagement & faster team <br className="hidden lg:block" />
+                        training.
                     </p>
 
                     {/* Mobile Metrics SVG (Shown only on mobile) */}

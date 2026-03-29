@@ -28,10 +28,10 @@ export default function SocialLearning() {
 
     return (
         <section id="social-learning" className="bg-white py-12 lg:py-24 px-6 lg:px-[120px] min-h-[645px] lg:h-auto flex items-center overflow-hidden">
-            <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 lg:gap-0">
+            <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-center justify-between gap-6 lg:gap-0 w-full">
 
                 {/* Left Content */}
-                <div className="w-full lg:w-[45%] flex flex-col text-left">
+                <div className="w-full lg:w-[45%] flex flex-col text-left lg:items-start lg:mr-auto">
                     <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[56px] leading-[1.1] tracking-tight mb-2">
                         Learning That <br />
                         Spreads Naturally
@@ -49,20 +49,26 @@ export default function SocialLearning() {
                     </div>
                 </div>
 
-                {/* Right Visual Area */}
-                <div className="w-full max-w-[361px] h-[265px] lg:w-[641px] lg:h-[470px] relative mt-2 lg:mt-0">
-                    {/* The Hub (Top-Right) */}
-                    <div className="absolute top-0 right-0 z-0 w-full h-full pointer-events-none">
-                        <Image
-                            src="/sl.svg"
-                            alt=""
-                            fill
-                            className="object-contain lg:object-right-top object-center"
-                        />
-                    </div>
-
+                {/* Right Visual Area - Mobile only */}
+                <div className="w-full max-w-[361px] h-[265px] relative mt-2 lg:hidden">
+                    <Image
+                        src="/sl.svg"
+                        alt=""
+                        fill
+                        className="object-contain object-center"
+                    />
                 </div>
-                
+
+                {/* Right Visual Area - Desktop only */}
+                <Image
+                    src="/s2.svg"
+                    alt=""
+                    width={641}
+                    height={470}
+                    className="hidden lg:block w-[641px] h-[470px] lg:ml-auto lg:flex-shrink-0 lg:-translate-x-24"
+                    priority
+                />
+
                 {/* Bottom Quote Box (Mobile only - Shown after image) */}
                 <div className="flex lg:hidden bg-[#FCF6E3] rounded-[16px] p-4 w-full max-w-[361px] h-auto min-h-[90px] relative items-center justify-center mt-4 mx-auto">
                     <p className="text-[#CE510B] italic text-[16px] leading-snug font-medium text-center">
