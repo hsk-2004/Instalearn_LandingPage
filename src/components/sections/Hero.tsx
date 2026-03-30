@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
     const HighlightBox = ({ className }: { className?: string }) => (
         <div
-            className={`w-full lg:w-[625px] min-h-[72px] lg:h-auto bg-[#FFF9EE] border border-[#FFD9B3]/50 rounded-[12px] flex items-center px-[24px] py-4 text-left shadow-sm overflow-hidden ${className}`}
+            className={`w-full lg:max-w-[625px] min-h-[72px] lg:h-auto bg-[#FFF9EE] border border-[#FFD9B3]/50 rounded-[12px] flex items-center px-[24px] py-4 text-left shadow-sm overflow-hidden ${className}`}
         >
             <p
                 className="text-[#CE510B] font-medium text-[14px] lg:text-[20px] leading-relaxed italic opacity-90"
@@ -16,13 +16,14 @@ export default function Hero() {
     );
 
     return (
-        <section className="pt-32 lg:pt-40 pb-10 lg:pb-20 px-6 lg:px-[120px] flex flex-col lg:flex-row items-center lg:justify-between text-left w-full max-w-[1440px] mx-auto overflow-hidden lg:gap-16">
+        <section className="pt-32 lg:pt-40 pb-10 lg:pb-20 px-0 overflow-hidden flex justify-center w-full">
+            <div className="w-full max-w-[1440px] flex flex-col lg:flex-row items-center lg:justify-between text-left lg:gap-16 px-6 lg:px-[80px] xl:px-[100px]">
             {/* Left Content Container */}
             <div className="flex flex-col items-start w-full lg:w-[50%] z-10">
                 {/* Headline */}
-                <h1 className="text-[#562F00] font-lexend font-normal text-[30px] lg:text-[56px] leading-[1.2] lg:leading-[72px] tracking-[0.35px] mb-4 text-left">
+                <h1 className="text-[#562F00] font-lexend font-normal text-[30px] md:text-[40px] lg:text-[56px] leading-[1.2] lg:leading-[72px] tracking-[0.35px] mb-4 text-left">
                     Training that{" "}
-                    <span className="font-normal text-[30px] lg:text-[56px] leading-[1] text-[#CE510B]" style={{ fontFamily: "'Parabole', cursive" }}>
+                    <span className="font-normal text-[30px] md:text-[40px] lg:text-[56px] leading-[1] text-[#CE510B]" style={{ fontFamily: "'Parabole', cursive" }}>
                         Actually
                     </span>{" "}
                     <br className="hidden lg:block" />
@@ -48,8 +49,8 @@ export default function Hero() {
             </div>
 
             {/* Right Content Container (Image) */}
-            <div className="relative w-full lg:w-auto mx-auto lg:mx-0 mt-4 lg:mt-0 flex justify-center lg:justify-end">
-                <div className="relative w-full max-w-[360px] lg:max-w-none aspect-[361/345] lg:w-[514px] lg:h-[426px]">
+            <div className="relative w-full lg:w-[50%] mx-auto lg:mx-0 mt-4 lg:mt-0 flex justify-center lg:justify-end">
+                <div className="relative w-full max-w-[360px] lg:max-w-[514px] aspect-[361/345] lg:aspect-[514/426] w-full">
                     <Image
                         src="/mainimage.svg"
                         alt="Hero Image"
@@ -62,6 +63,7 @@ export default function Hero() {
 
             {/* Mobile Highlight Box (Visible only on mobile, at the end) */}
             <HighlightBox className="mt-12 lg:hidden" />
+            </div>
         </section>
     );
 }

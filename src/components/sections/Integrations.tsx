@@ -3,12 +3,12 @@
 import Image from "next/image";
 
 const tags = [
-    { text: "Open APIs", width: "w-[103px]", lgSize: "lg:w-[134px] lg:h-[56px]" },
-    { text: "Enterprise grade security", width: "w-[209px]", lgSize: "lg:w-[266px] lg:h-[56px]" },
-    { text: "Performance systems", width: "w-[180px]", lgSize: "lg:w-[230px] lg:h-[56px]" },
-    { text: "CRM integration", width: "w-[145px]", lgSize: "lg:w-[187px] lg:h-[56px]" },
-    { text: "SSO & role based access", width: "w-[205px]", lgSize: "lg:w-[262px] lg:h-[56px]" },
-    { text: "HRIS integration", width: "w-[145px]", lgSize: "lg:w-[187px] lg:h-[56px]" },
+    { text: "Open APIs", width: "w-[103px]", lgSize: "lg:w-[115px] lg:h-[48px]", xlSize: "xl:w-[134px] xl:h-[56px]" },
+    { text: "Enterprise grade security", width: "w-[209px]", lgSize: "lg:w-[225px] lg:h-[48px]", xlSize: "xl:w-[266px] xl:h-[56px]" },
+    { text: "Performance systems", width: "w-[180px]", lgSize: "lg:w-[195px] lg:h-[48px]", xlSize: "xl:w-[230px] xl:h-[56px]" },
+    { text: "CRM integration", width: "w-[145px]", lgSize: "lg:w-[160px] lg:h-[48px]", xlSize: "xl:w-[187px] xl:h-[56px]" },
+    { text: "SSO & role based access", width: "w-[205px]", lgSize: "lg:w-[220px] lg:h-[48px]", xlSize: "xl:w-[262px] xl:h-[56px]" },
+    { text: "HRIS integration", width: "w-[145px]", lgSize: "lg:w-[160px] lg:h-[48px]", xlSize: "xl:w-[187px] xl:h-[56px]" },
 ];
 
 const orbitIcons = [
@@ -22,24 +22,30 @@ const orbitIcons = [
 
 export default function Integrations() {
     return (
-        <section id="integrations" className="bg-[#FCF6E3] pt-4 pb-0 lg:h-[650px] px-4 lg:px-[120px] overflow-hidden flex flex-col lg:flex lg:items-center">
-            <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 w-full lg:h-full">
+        <section id="integrations" className="bg-[#FCF6E3] pt-4 pb-0 lg:h-[550px] xl:h-[650px] px-0 overflow-hidden flex flex-col lg:flex lg:items-center">
+            <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 w-full lg:h-full lg:px-[80px] xl:px-[130px]">
 
                 {/* Left Content */}
-                <div className="w-full lg:w-[45%] flex flex-col items-start text-left flex-1">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] tracking-tight mb-4 lg:mb-6 md:ml-[130px] lg:ml-[130px]">
+                <div className="w-full lg:w-[45%] flex flex-col items-start text-left flex-1 px-6 lg:px-0">
+                    <h2
+                        className="text-[#3D2C1E] font-lexend font-normal leading-[1.1] tracking-tight mb-4 lg:mb-6"
+                        style={{ fontSize: "clamp(32px, 4.4vw, 64px)" }}
+                    >
                         Integration & <span style={{ fontFamily: "'Parabole', cursive" }}>Security</span>
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[20px] leading-relaxed mb-6 lg:mb-16 max-w-[500px] opacity-90 md:ml-[130px] lg:ml-[130px]">
+                    <p
+                        className="text-[#8B8374] font-medium leading-relaxed mb-6 lg:mb-10 xl:mb-16 max-w-[500px] opacity-90"
+                        style={{ fontSize: "clamp(18px, 1.4vw, 20px)" }}
+                    >
                         Seamlessly integrate with your existing systems without disrupting workflows.
                     </p>
 
                     {/* Tags Grid - 2x3 layout on mobile */}
-                    <div className="flex flex-wrap gap-2 lg:gap-4 max-w-[450px] lg:max-w-[500px] md:ml-[130px] lg:ml-[130px]">
+                    <div className="flex flex-wrap gap-2 lg:gap-3 xl:gap-4 max-w-[450px] lg:max-w-[420px] xl:max-w-[500px]">
                         {tags.map((tag, idx) => (
                             <div
                                 key={idx}
-                                className={`bg-[#FF7F1E] text-white ${tag.width} h-[38px] flex items-center justify-center rounded-[12px] font-lexend font-normal text-[10.5px] lg:text-[16px] ${'lgSize' in tag ? tag.lgSize : 'lg:w-fit lg:h-auto'} lg:px-4 lg:py-2.5 text-center shadow-sm transform transition-all hover:-translate-y-1 hover:brightness-110 cursor-default`}
+                                className={`bg-[#FF7F1E] text-white ${tag.width} h-[38px] flex items-center justify-center rounded-[12px] font-lexend font-normal text-[10.5px] lg:text-[14px] xl:text-[16px] ${tag.lgSize} ${tag.xlSize} lg:px-4 lg:py-2.5 text-center shadow-sm transform transition-all hover:-translate-y-1 hover:brightness-110 cursor-default`}
                             >
                                 {tag.text}
                             </div>

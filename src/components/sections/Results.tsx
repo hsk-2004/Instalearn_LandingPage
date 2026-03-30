@@ -4,17 +4,23 @@ import Image from "next/image";
 
 export default function Results() {
     return (
-        <section id="results" className="py-24 px-0 lg:px-[120px] bg-white overflow-hidden">
-            <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-16 lg:gap-24">
+        <section id="results" className="py-24 px-0 bg-white overflow-hidden">
+            <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-16 lg:gap-16 xl:gap-24 lg:px-[80px] xl:px-[130px]">
 
                 {/* Left Content */}
                 <div className="w-full lg:w-[45%] flex flex-col text-left px-6 lg:px-0">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] mb-8 lg:ml-[130px] md:ml-[130px]">
+                    <h2 
+                        className="text-[#3D2C1E] font-lexend font-normal leading-[1.1] tracking-tight mb-8"
+                        style={{ fontSize: "clamp(32px, 4.4vw, 64px)" }}
+                    >
                         What Teams <br className="hidden md:block" />
                         <span style={{ fontFamily: "'Parabole', cursive" }}>Achieve</span> <br className="md:hidden" /> with <br className="hidden md:block" />
                         InstaLearn
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0 lg:whitespace-nowrap lg:ml-[130px]">
+                    <p 
+                        className="text-[#8B8374] font-medium leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0 lg:whitespace-nowrap"
+                        style={{ fontSize: "clamp(18px, 1.4vw, 22px)" }}
+                    >
                         Short lessons, mobile access, AI-powered <br className="hidden lg:block" />
                         creation drive engagement & faster team <br className="hidden lg:block" />
                         training.
@@ -40,23 +46,23 @@ export default function Results() {
                     {/* Top Row */}
                     <div className="flex flex-col sm:flex-row gap-2 lg:gap-2.5">
                         {/* 80% - Engagement rate */}
-                        <div className="w-full lg:w-[271px] lg:h-[188px] bg-[#FECE99] rounded-[16px] p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 shrink-0">
+                        <div className="w-[40%] min-h-[160px] xl:min-h-[188px] bg-[#FECE99] rounded-[16px] p-6 xl:p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 shrink-0">
                             <div className="flex items-start">
-                                <span className="text-[#3D2C1E] font-bold text-[64px] leading-none tracking-tight">80</span>
-                                <span className="text-[#3D2C1E] font-medium text-[24px] mt-2 ml-1 opacity-60">%</span>
+                                <span className="text-[#3D2C1E] font-bold text-[50px] xl:text-[64px] leading-none tracking-tight">80</span>
+                                <span className="text-[#3D2C1E] font-medium text-[20px] xl:text-[24px] mt-2 ml-1 opacity-60">%</span>
                             </div>
-                            <div className="text-[#3D2C1E] font-medium text-[16px] lg:text-[18px] text-right mt-4 opacity-80">
+                            <div className="text-[#3D2C1E] font-medium text-[15px] xl:text-[18px] text-right mt-4 opacity-80">
                                 Engagement rate
                             </div>
                         </div>
 
                         {/* 4x higher - Completion vs LMS */}
-                        <div className="w-full lg:w-[404px] lg:h-[188px] bg-[#FECE99] rounded-[16px] p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 shrink-0">
+                        <div className="flex-1 min-h-[160px] xl:min-h-[188px] bg-[#FECE99] rounded-[16px] p-6 xl:p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300">
                             <div className="flex items-baseline">
-                                <span className="text-[#3D2C1E] font-bold text-[64px] leading-none tracking-tight">4x</span>
-                                <span className="text-[#3D2C1E] font-medium text-[24px] ml-2 opacity-60">higher</span>
+                                <span className="text-[#3D2C1E] font-bold text-[50px] xl:text-[64px] leading-none tracking-tight">4x</span>
+                                <span className="text-[#3D2C1E] font-medium text-[20px] xl:text-[24px] ml-2 opacity-60">higher</span>
                             </div>
-                            <div className="text-[#3D2C1E] font-medium text-[16px] lg:text-[18px] text-right mt-4 opacity-80">
+                            <div className="text-[#3D2C1E] font-medium text-[15px] xl:text-[18px] text-right mt-4 opacity-80">
                                 Completion vs LMS
                             </div>
                         </div>
@@ -65,23 +71,23 @@ export default function Results() {
                     {/* Bottom Row */}
                     <div className="flex flex-col sm:flex-row gap-2 lg:gap-2.5">
                         {/* 3-5 min - Average lesson time */}
-                        <div className="w-full lg:w-[404px] lg:h-[188px] bg-[#FECE99] rounded-[16px] p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 shrink-0">
+                        <div className="flex-1 min-h-[160px] xl:min-h-[188px] bg-[#FECE99] rounded-[16px] p-6 xl:p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300">
                             <div className="flex items-baseline">
-                                <span className="text-[#3D2C1E] font-bold text-[64px] leading-none tracking-tight">3-5</span>
-                                <span className="text-[#3D2C1E] font-medium text-[24px] ml-2 opacity-60">min</span>
+                                <span className="text-[#3D2C1E] font-bold text-[50px] xl:text-[64px] leading-none tracking-tight">3-5</span>
+                                <span className="text-[#3D2C1E] font-medium text-[20px] xl:text-[24px] ml-2 opacity-60">min</span>
                             </div>
-                            <div className="text-[#3D2C1E] font-medium text-[16px] lg:text-[18px] text-right mt-4 opacity-80">
+                            <div className="text-[#3D2C1E] font-medium text-[15px] xl:text-[18px] text-right mt-4 opacity-80">
                                 Average lesson time
                             </div>
                         </div>
 
                         {/* 2-3 min - Content creation */}
-                        <div className="w-full lg:w-[271px] lg:h-[188px] bg-[#FECE99] rounded-[16px] p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 shrink-0">
+                        <div className="w-[40%] min-h-[160px] xl:min-h-[188px] bg-[#FECE99] rounded-[16px] p-6 xl:p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 shrink-0">
                             <div className="flex items-baseline">
-                                <span className="text-[#3D2C1E] font-bold text-[64px] leading-none tracking-tight">2-3</span>
-                                <span className="text-[#3D2C1E] font-medium text-[24px] ml-2 opacity-60">min</span>
+                                <span className="text-[#3D2C1E] font-bold text-[50px] xl:text-[64px] leading-none tracking-tight">2-3</span>
+                                <span className="text-[#3D2C1E] font-medium text-[20px] xl:text-[24px] ml-2 opacity-60">min</span>
                             </div>
-                            <div className="text-[#3D2C1E] font-medium text-[16px] lg:text-[18px] text-right mt-4 opacity-80">
+                            <div className="text-[#3D2C1E] font-medium text-[15px] xl:text-[18px] text-right mt-4 opacity-80">
                                 Content creation
                             </div>
                         </div>
@@ -92,4 +98,3 @@ export default function Results() {
         </section>
     );
 }
-
