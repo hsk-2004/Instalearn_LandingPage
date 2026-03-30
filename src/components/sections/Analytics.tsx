@@ -41,11 +41,11 @@ export default function Analytics() {
             <div className="w-full max-w-[1440px] mx-auto">
                 {/* Header */}
                 <div className="pt-10 lg:pt-0 mb-8 lg:mb-20 text-left px-6 lg:px-0">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] mb-6 tracking-tight">
-                        Analytics That Drive <br />
+                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] mb-6 tracking-tight lg:ml-[130px]">
+                        <span style={{ fontFamily: "'Parabole', cursive" }}>Analytics</span> That Drive <br />
                         Learning
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[20px] max-w-[500px] leading-relaxed opacity-80">
+                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[20px] max-w-[500px] leading-relaxed opacity-80 lg:ml-[130px]">
                         Make data driven L&D decisions with real time insight into performance and skill development.
                     </p>
                 </div>

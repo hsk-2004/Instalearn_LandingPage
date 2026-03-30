@@ -6,8 +6,8 @@ export default function Hero() {
             className={`w-full lg:w-[625px] min-h-[72px] lg:h-auto bg-[#FFF9EE] border border-[#FFD9B3]/50 rounded-[12px] flex items-center px-[24px] py-4 text-left shadow-sm overflow-hidden ${className}`}
         >
             <p
-                className="text-[#CE510B] font-medium text-[16px] lg:text-[20px] leading-relaxed italic opacity-90"
-                style={{ fontFamily: "'Avenir Next', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif" }}
+                className="text-[#CE510B] font-medium text-[14px] lg:text-[20px] leading-relaxed italic opacity-90"
+                style={{ fontFamily: "'Avenir Next', sans-serif" }}
             >
                 Mobile First Learning, Training delivered instantly to your <br className="hidden lg:block" />
                 workforce through the devices they already use.
@@ -20,24 +20,24 @@ export default function Hero() {
             {/* Left Content Container */}
             <div className="flex flex-col items-start w-full lg:w-[50%] z-10">
                 {/* Headline */}
-                <h1 className="text-[#3D2C1E] font-lexend font-normal text-[42px] lg:text-[56px] leading-[1.2] lg:leading-[72px] tracking-[0.35px] mb-4 text-left">
+                <h1 className="text-[#562F00] font-lexend font-normal text-[28px] lg:text-[56px] leading-[1.2] lg:leading-[72px] tracking-[0.35px] mb-4 text-left">
                     Training that{" "}
-                    <span className="font-caveat font-normal text-[56px] leading-[1] text-[#CE510B]">
+                    <span className="font-normal text-[28px] lg:text-[56px] leading-[1] text-[#CE510B]" style={{ fontFamily: "'Parabole', cursive" }}>
                         Actually
                     </span>{" "}
                     <br className="hidden lg:block" />
-                    <span className="lg:whitespace-nowrap">reaches your Workforce</span>
+                    <span className="whitespace-nowrap">reaches your Workforce</span>
                 </h1>
 
                 {/* Subtext */}
-                <p className="text-[#8B8374] text-[16px] lg:text-[22px] font-medium leading-[1.5] max-w-[540px] mb-8">
+                <p className="text-[#8B8374] text-[16px] lg:text-[22px] font-medium leading-[1.5] max-w-[540px] mb-8" style={{ fontFamily: "'Avenir Next', sans-serif" }}>
                     AI powered micro learning directly through the tools your people already use.
                 </p>
 
                 {/* ROI Button */}
                 <div className="mb-12 lg:mb-8 flex justify-start w-full">
                     <button className="flex items-center justify-center bg-white border border-[#181815] rounded-[56px] w-[186px] h-[45px] shadow-sm hover:shadow-md transition-all active:scale-95 group">
-                        <span className="text-[#181815] font-asap font-semibold text-[16px]">
+                        <span className="text-[#181815] font-semibold text-[14px]" style={{ fontFamily: "'Avenir Next', sans-serif" }}>
                             Calculate Your ROI
                         </span>
                     </button>

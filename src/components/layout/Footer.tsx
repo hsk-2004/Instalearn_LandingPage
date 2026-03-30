@@ -6,18 +6,18 @@ import { Mail, Phone, MapPin } from "lucide-react";
 export default function Footer() {
     return (
         <footer className="bg-white py-12 px-6 lg:px-[120px]">
-            <div className="bg-[#FECE99] rounded-[32px] p-8 lg:p-16 max-w-[1440px] mx-auto flex flex-col gap-12 shadow-sm">
-                
+            <div className="bg-[#FECE99] rounded-[32px] p-8 lg:p-16 lg:w-[1240px] lg:h-[435px] mx-auto flex flex-col gap-12 shadow-sm">
+
                 {/* Main Content Row */}
                 <div className="flex flex-col lg:flex-row justify-start lg:gap-32 gap-12">
-                    
+
                     {/* Logo & Quick Links */}
                     <div className="flex flex-col gap-8 md:min-w-[200px]">
-                        <Image 
-                            src="/logo.svg" 
-                            alt="Instalearn Logo" 
-                            width={160} 
-                            height={50} 
+                        <Image
+                            src="/logo.svg"
+                            alt="Instalearn Logo"
+                            width={160}
+                            height={50}
                             className="object-contain"
                         />
                         <div className="flex flex-col gap-3">

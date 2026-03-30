@@ -9,12 +9,12 @@ export default function Results() {
 
                 {/* Left Content */}
                 <div className="w-full lg:w-[45%] flex flex-col text-center lg:text-left px-6 lg:px-0">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[48px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] mb-8">
+                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] mb-8 lg:ml-[130px]">
                         What Teams <br />
-                        Achieve with <br />
+                        <span style={{ fontFamily: "'Parabole', cursive" }}>Achieve</span> with <br />
                         InstaLearn
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0 lg:whitespace-nowrap">
+                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0 lg:whitespace-nowrap lg:ml-[130px]">
                         Short lessons, mobile access, AI-powered <br className="hidden lg:block" />
                         creation drive engagement & faster team <br className="hidden lg:block" />
                         training.

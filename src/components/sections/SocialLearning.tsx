@@ -32,16 +32,16 @@ export default function SocialLearning() {
 
                 {/* Left Content */}
                 <div className="w-full lg:w-[45%] flex flex-col text-left lg:items-start lg:mr-auto">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[56px] leading-[1.1] tracking-tight mb-2">
+                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] md:text-[40px] lg:text-[56px] leading-[1.1] tracking-tight mb-2 lg:ml-[130px]">
                         Learning That <br />
-                        Spreads Naturally
+                        Spreads <span style={{ fontFamily: "'Parabole', cursive" }}>Naturally</span>
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-relaxed mb-4 lg:mb-20 lg:mx-0 max-w-[420px] opacity-80">
+                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-relaxed mb-4 lg:mb-20 lg:mx-0 max-w-[420px] opacity-80 lg:ml-[130px]">
                         InstaLearn combines AI driven micro learning <br /> with social learning
                     </p>
 
                     {/* Bottom Quote Box */}
-                    <div className="hidden lg:flex bg-[#FCF6E3] rounded-[16px] p-4 lg:p-8 lg:w-full lg:h-auto lg:max-w-[460px] relative items-center">
+                    <div className="hidden lg:flex bg-[#FCF6E3] rounded-[16px] p-4 lg:p-8 lg:w-full lg:h-auto lg:max-w-[460px] relative items-center lg:ml-[130px]">
                         <p className="text-[#CE510B] italic text-[16px] lg:text-[22px] leading-snug lg:leading-relaxed font-medium">
                             Training that spreads through your organisation, <br className="hidden lg:block" />
                             the way Information does through WhatsApp
