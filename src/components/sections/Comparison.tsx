@@ -4,7 +4,7 @@ export default function Comparison() {
             <div className="max-w-[1440px] mx-auto">
                 {/* Header */}
                 <div className="mb-20 px-6 lg:px-0 lg:ml-[130px]">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[40px] lg:text-[56px] leading-[1.1] tracking-[-0.02em]">
+                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[56px] leading-[1.1] tracking-[-0.02em]">
                         Why you should <br />
                         <span style={{ fontFamily: "'Parabole', cursive" }}>switch</span><span className="font-lexend font-normal opacity-90 italic"> to instalearn</span>
                     </h2>

@@ -27,15 +27,15 @@ export default function Integrations() {
 
                 {/* Left Content */}
                 <div className="w-full lg:w-[45%] flex flex-col items-start text-left flex-1">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] tracking-tight mb-4 lg:mb-6 lg:ml-[130px]">
+                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] tracking-tight mb-4 lg:mb-6 md:ml-[130px] lg:ml-[130px]">
                         Integration & <span style={{ fontFamily: "'Parabole', cursive" }}>Security</span>
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[20px] leading-relaxed mb-6 lg:mb-16 max-w-[500px] opacity-90 lg:ml-[130px]">
+                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[20px] leading-relaxed mb-6 lg:mb-16 max-w-[500px] opacity-90 md:ml-[130px] lg:ml-[130px]">
                         Seamlessly integrate with your existing systems without disrupting workflows.
                     </p>
 
                     {/* Tags Grid - 2x3 layout on mobile */}
-                    <div className="flex flex-wrap gap-2 lg:gap-4 max-w-[450px] lg:max-w-[500px] lg:ml-[130px]">
+                    <div className="flex flex-wrap gap-2 lg:gap-4 max-w-[450px] lg:max-w-[500px] md:ml-[130px] lg:ml-[130px]">
                         {tags.map((tag, idx) => (
                             <div
                                 key={idx}

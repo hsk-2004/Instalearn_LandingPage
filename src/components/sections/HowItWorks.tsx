@@ -27,10 +27,10 @@ export default function HowItWorks() {
             <div className="max-w-[1440px] mx-auto">
                 {/* Header */}
                 <div className="mb-8 text-left px-6 lg:px-0">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[56px] leading-[1.1] mb-6 tracking-tight lg:ml-[130px]">
+                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[56px] leading-[1.1] mb-6 tracking-tight md:ml-[130px] lg:ml-[130px]">
                         How it <span style={{ fontFamily: "'Parabole', cursive" }}>works</span>
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] max-w-[500px] leading-relaxed opacity-80 lg:ml-[130px]">
+                    <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] max-w-[500px] leading-relaxed opacity-80 md:ml-[130px] lg:ml-[130px]">
                         An experienced professional can record or generate a 5-minute module in just 30 seconds.
                     </p>
                 </div>

@@ -8,10 +8,10 @@ export default function Results() {
             <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-16 lg:gap-24">
 
                 {/* Left Content */}
-                <div className="w-full lg:w-[45%] flex flex-col text-center lg:text-left px-6 lg:px-0">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] mb-8 lg:ml-[130px]">
-                        What Teams <br />
-                        <span style={{ fontFamily: "'Parabole', cursive" }}>Achieve</span> with <br />
+                <div className="w-full lg:w-[45%] flex flex-col text-left px-6 lg:px-0">
+                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] mb-8 lg:ml-[130px] md:ml-[130px]">
+                        What Teams <br className="hidden md:block" />
+                        <span style={{ fontFamily: "'Parabole', cursive" }}>Achieve</span> <br className="md:hidden" /> with <br className="hidden md:block" />
                         InstaLearn
                     </h2>
                     <p className="text-[#8B8374] font-medium text-[18px] lg:text-[22px] leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0 lg:whitespace-nowrap lg:ml-[130px]">

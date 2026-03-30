@@ -47,17 +47,17 @@ export default function Industries() {
 
                 {/* Left Content */}
                 <div className="w-full lg:w-[45%] flex flex-col text-left px-6 lg:px-0">
-                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[28px] lg:text-[64px] leading-[1.1] tracking-tight mb-2 lg:mb-6 lg:ml-[130px]">
+                    <h2 className="text-[#3D2C1E] font-lexend font-normal text-[32px] lg:text-[64px] leading-[1.1] tracking-tight mb-2 lg:mb-6 md:ml-[130px] lg:ml-[130px]">
                         Built For Frontline <br />
                         <span style={{ fontFamily: "'Parabole', cursive" }}>Teams</span>
                     </h2>
-                    <p className="text-[#8B8374] font-medium text-[16px] lg:text-[20px] leading-relaxed mb-4 lg:mb-40 max-w-[420px] opacity-80 lg:ml-[130px]">
+                    <p className="text-[#8B8374] font-medium text-[16px] lg:text-[20px] leading-relaxed mb-4 lg:mb-40 max-w-[420px] opacity-80 md:ml-[130px] lg:ml-[130px]">
                         Designed for teams that don't sit at desks <br className="hidden lg:block" />
                         but power your operations.
                     </p>
 
                     {/* Support Box - Desktop only */}
-                    <div className="hidden lg:flex bg-[#FCF6E3] rounded-[16px] p-4 lg:p-6 w-fit flex items-center gap-6 shadow-sm lg:ml-[130px]">
+                    <div className="hidden lg:flex bg-[#FCF6E3] rounded-[16px] p-4 lg:p-6 w-fit flex items-center gap-6 shadow-sm md:ml-[130px] lg:ml-[130px]">
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 lg:w-12 lg:h-12 bg-white rounded-full flex items-center justify-center p-2.5 shadow-sm">
                                 <Image src="/logo.svg" alt="Apple" width={24} height={24} className="brightness-0" />

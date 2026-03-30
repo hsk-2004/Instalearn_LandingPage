@@ -20,9 +20,9 @@ export default function Hero() {
             {/* Left Content Container */}
             <div className="flex flex-col items-start w-full lg:w-[50%] z-10">
                 {/* Headline */}
-                <h1 className="text-[#562F00] font-lexend font-normal text-[28px] lg:text-[56px] leading-[1.2] lg:leading-[72px] tracking-[0.35px] mb-4 text-left">
+                <h1 className="text-[#562F00] font-lexend font-normal text-[30px] lg:text-[56px] leading-[1.2] lg:leading-[72px] tracking-[0.35px] mb-4 text-left">
                     Training that{" "}
-                    <span className="font-normal text-[28px] lg:text-[56px] leading-[1] text-[#CE510B]" style={{ fontFamily: "'Parabole', cursive" }}>
+                    <span className="font-normal text-[30px] lg:text-[56px] leading-[1] text-[#CE510B]" style={{ fontFamily: "'Parabole', cursive" }}>
                         Actually
                     </span>{" "}
                     <br className="hidden lg:block" />
