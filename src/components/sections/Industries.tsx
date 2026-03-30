@@ -63,18 +63,21 @@ export default function Industries() {
                     </p>
 
                     {/* Support Box - Desktop only */}
-                    <div className="hidden lg:flex bg-[#FCF6E3] rounded-[16px] p-4 lg:p-5 xl:p-6 w-fit items-center gap-6 shadow-sm">
+                    <div 
+                        className="hidden lg:flex bg-[#FCF6E3] rounded-[24px] items-center gap-8 shadow-sm px-8"
+                        style={{ width: "465px", height: "72px" }}
+                    >
                         <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 lg:w-11 xl:w-12 lg:h-11 xl:h-12 bg-white rounded-full flex items-center justify-center p-2.5 shadow-sm">
-                                <Image src="/logo.svg" alt="Apple" width={24} height={24} className="brightness-0" />
+                            <div className="w-10 h-10 lg:w-11 lg:h-11 bg-white rounded-full flex items-center justify-center p-2.5 shadow-sm">
+                                <Image src="/logo.svg" alt="Apple" width={22} height={22} className="brightness-0" />
                             </div>
-                            <div className="w-10 h-10 lg:w-11 xl:w-12 lg:h-11 xl:h-12 bg-white rounded-full flex items-center justify-center p-2.5 shadow-sm">
-                                <Image src="/instalearn/i1.svg" alt="Android" width={24} height={24} />
+                            <div className="w-10 h-10 lg:w-11 lg:h-11 bg-white rounded-full flex items-center justify-center p-2.5 shadow-sm">
+                                <Image src="/instalearn/i1.svg" alt="Android" width={22} height={22} />
                             </div>
                         </div>
                         <p
-                            className="text-[#CE510B] italic leading-tight font-medium max-w-[200px]"
-                            style={{ fontSize: "clamp(12px, 1.2vw, 20px)" }}
+                            className="text-[#CE510B] italic leading-tight font-medium max-w-none"
+                            style={{ fontSize: "20px" }}
                         >
                             Fully supported on iOS and Android devices
                         </p>

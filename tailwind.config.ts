@@ -32,6 +32,8 @@ const config: Config = {
                 patrickHand: ["var(--font-patrick-hand)", "cursive", "sans-serif"],
                 lexend: ["var(--font-lexend)", "sans-serif"],
                 asap: ["var(--font-asap)", "sans-serif"],
+                gilroy: ["Gilroy", "sans-serif"],
+                avenirNext: ["Avenir Next", "sans-serif"],
             },
         },
     },

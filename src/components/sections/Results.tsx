@@ -41,7 +41,7 @@ export default function Results() {
                 </div>
 
                 {/* Right Content - Stats Grid (Hidden on mobile) */}
-                <div className="hidden lg:flex lg:w-[55%] flex-col gap-2 lg:gap-2.5">
+                <div className="hidden lg:flex lg:w-[55%] flex-col gap-2 lg:gap-2.5 lg:-translate-x-6 xl:-translate-x-12">
 
                     {/* Top Row */}
                     <div className="flex flex-col sm:flex-row gap-2 lg:gap-2.5">
