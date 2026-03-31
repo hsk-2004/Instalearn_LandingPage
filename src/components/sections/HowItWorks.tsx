@@ -35,7 +35,7 @@ export default function HowItWorks() {
                     </h2>
                     <p
                         className="text-[#8B8374] font-medium max-w-[500px] leading-relaxed opacity-80"
-                        style={{ fontSize: "clamp(18px, 1.4vw, 22px)" }}
+                        style={{ fontSize: "clamp(16px, 1.4vw, 22px)" }}
                     >
                         An experienced professional can record or generate a 5-minute module in just 30 seconds.
                     </p>

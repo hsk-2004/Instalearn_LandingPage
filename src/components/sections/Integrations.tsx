@@ -5,10 +5,10 @@ import Image from "next/image";
 const tags = [
     { text: "Open APIs", width: "w-[103px]", lgSize: "lg:w-[115px] lg:h-[48px]", xlSize: "xl:w-[134px] xl:h-[56px]" },
     { text: "Enterprise grade security", width: "w-[209px]", lgSize: "lg:w-[225px] lg:h-[48px]", xlSize: "xl:w-[266px] xl:h-[56px]" },
-    { text: "Performance systems", width: "w-[180px]", lgSize: "lg:w-[195px] lg:h-[48px]", xlSize: "xl:w-[230px] xl:h-[56px]" },
+    { text: "Performance systems", width: "w-[164px]", lgSize: "lg:w-[195px] lg:h-[48px]", xlSize: "xl:w-[230px] xl:h-[56px]" },
     { text: "CRM integration", width: "w-[145px]", lgSize: "lg:w-[160px] lg:h-[48px]", xlSize: "xl:w-[187px] xl:h-[56px]" },
-    { text: "SSO & role based access", width: "w-[205px]", lgSize: "lg:w-[220px] lg:h-[48px]", xlSize: "xl:w-[262px] xl:h-[56px]" },
-    { text: "HRIS integration", width: "w-[145px]", lgSize: "lg:w-[160px] lg:h-[48px]", xlSize: "xl:w-[187px] xl:h-[56px]" },
+    { text: "SSO & role based access", width: "w-[178px]", lgSize: "lg:w-[220px] lg:h-[48px]", xlSize: "xl:w-[262px] xl:h-[56px]" },
+    { text: "HRIS integration", width: "w-[130px]", lgSize: "lg:w-[160px] lg:h-[48px]", xlSize: "xl:w-[187px] xl:h-[56px]" },
 ];
 
 const orbitIcons = [
@@ -35,7 +35,7 @@ export default function Integrations() {
                     </h2>
                     <p
                         className="text-[#8B8374] font-medium leading-relaxed mb-6 lg:mb-10 xl:mb-16 max-w-[500px] opacity-90"
-                        style={{ fontSize: "clamp(18px, 1.4vw, 20px)" }}
+                        style={{ fontSize: "clamp(15px, 1.4vw, 20px)" }}
                     >
                         Seamlessly integrate with your existing systems without disrupting workflows.
                     </p>
@@ -65,7 +65,7 @@ export default function Integrations() {
             </div>
 
             {/* Mobile Only: Integration Image - outside container so it touches section bottom */}
-            <div className="flex lg:hidden w-screen -mx-4 mt-14 justify-center">
+            <div className="flex lg:hidden w-screen -mx-4 mt-14 justify-center translate-x-4">
                 <div className="relative w-full h-auto leading-[0]">
                     <Image
                         src="/integration.svg"

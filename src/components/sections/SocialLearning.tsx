@@ -41,7 +41,7 @@ export default function SocialLearning() {
                     </h2>
                     <p
                         className="text-[#8B8374] font-medium leading-relaxed mb-4 lg:mb-20 xl:mb-32 lg:mx-0 max-w-[420px] opacity-80"
-                        style={{ fontSize: "clamp(18px, 1.4vw, 22px)" }}
+                        style={{ fontSize: "clamp(15px, 1.4vw, 22px)" }}
                     >
                         InstaLearn combines AI driven micro <br className="hidden lg:block" /> learning with social learning
                     </p>

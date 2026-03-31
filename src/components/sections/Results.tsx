@@ -9,7 +9,7 @@ export default function Results() {
 
                 {/* Left Content */}
                 <div className="w-full lg:w-[45%] flex flex-col text-left px-6 lg:px-0">
-                    <h2 
+                    <h2
                         className="text-[#3D2C1E] font-lexend font-normal leading-[1.1] tracking-tight mb-8"
                         style={{ fontSize: "clamp(32px, 4.4vw, 64px)" }}
                     >
@@ -17,9 +17,9 @@ export default function Results() {
                         <span style={{ fontFamily: "'Parabole', cursive" }}>Achieve</span> <br className="md:hidden" /> with <br className="hidden md:block" />
                         InstaLearn
                     </h2>
-                    <p 
+                    <p
                         className="text-[#8B8374] font-medium leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0 lg:whitespace-nowrap"
-                        style={{ fontSize: "clamp(18px, 1.4vw, 22px)" }}
+                        style={{ fontSize: "clamp(16px, 1.4vw, 22px)" }}
                     >
                         Short lessons, mobile access, AI-powered <br className="hidden lg:block" />
                         creation drive engagement & faster team <br className="hidden lg:block" />

@@ -56,14 +56,14 @@ export default function Industries() {
                     </h2>
                     <p
                         className="text-[#8B8374] font-medium leading-relaxed mb-4 lg:mb-20 xl:mb-40 max-w-[420px] opacity-80"
-                        style={{ fontSize: "clamp(18px, 1.4vw, 20px)" }}
+                        style={{ fontSize: "clamp(15px, 1.4vw, 20px)" }}
                     >
                         Designed for teams that don't sit at desks <br className="hidden lg:block" />
                         but power your operations.
                     </p>
 
                     {/* Support Box - Desktop only */}
-                    <div 
+                    <div
                         className="hidden lg:flex bg-[#FCF6E3] rounded-[24px] items-center gap-8 shadow-sm px-8"
                         style={{ width: "465px", height: "72px" }}
                     >

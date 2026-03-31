@@ -31,8 +31,8 @@ export default function Hero() {
                 </h1>
 
                 {/* Subtext */}
-                <p className="text-[#8B8374] text-[16px] lg:text-[22px] font-medium leading-[1.5] max-w-[540px] mb-8" style={{ fontFamily: "'Avenir Next', sans-serif" }}>
-                    AI powered micro learning directly through the tools your people already use.
+                <p className="text-[#8B8374] text-[16px] lg:text-[22px] font-medium leading-[1.5] max-w-[540px] mb-8 whitespace-nowrap" style={{ fontFamily: "'Avenir Next', sans-serif" }}>
+                    AI powered micro learning directly through <br className="lg:hidden" />the tools your <br className="hidden lg:block" />people already use.
                 </p>
 
                 {/* ROI Button */}

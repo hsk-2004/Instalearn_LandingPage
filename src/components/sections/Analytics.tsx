@@ -41,16 +41,16 @@ export default function Analytics() {
             <div className="w-full max-w-[1440px] mx-auto lg:px-[80px] xl:px-[130px]">
                 {/* Header */}
                 <div className="pt-10 lg:pt-0 mb-8 lg:mb-12 xl:mb-20 text-left px-6 lg:px-0">
-                    <h2 
+                    <h2
                         className="text-[#3D2C1E] font-lexend font-normal leading-[1.1] mb-6 tracking-tight"
                         style={{ fontSize: "clamp(32px, 4.4vw, 64px)" }}
                     >
                         <span style={{ fontFamily: "'Parabole', cursive" }}>Analytics</span> That Drive <br />
                         Learning
                     </h2>
-                    <p 
+                    <p
                         className="text-[#8B8374] font-medium max-w-[500px] leading-relaxed opacity-80"
-                        style={{ fontSize: "clamp(18px, 1.4vw, 20px)" }}
+                        style={{ fontSize: "clamp(15px, 1.4vw, 20px)" }}
                     >
                         Make data driven L&D decisions with real time insight into performance and skill development.
                     </p>
