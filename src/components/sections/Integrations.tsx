@@ -26,22 +26,22 @@ export default function Integrations() {
             <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 w-full lg:h-full lg:px-[80px] xl:px-[130px]">
 
                 {/* Left Content */}
-                <div className="w-full lg:w-[45%] flex flex-col items-start text-left flex-1 px-6 lg:px-0">
+                <div className="w-full lg:w-[45%] flex flex-col items-start md:items-center lg:items-start text-left md:text-center lg:text-left flex-1 px-6 md:px-0 lg:px-0">
                     <h2
                         className="text-[#3D2C1E] font-lexend font-normal leading-[1.1] tracking-tight mb-4 lg:mb-6"
-                        style={{ fontSize: "clamp(32px, 4.4vw, 64px)" }}
+                        style={{ fontSize: "clamp(32px, 5.0vw, 64px)" }}
                     >
                         Integration & <span style={{ fontFamily: "'Parabole', cursive" }}>Security</span>
                     </h2>
                     <p
-                        className="text-[#8B8374] font-medium leading-relaxed mb-6 lg:mb-10 xl:mb-16 max-w-[500px] opacity-90"
-                        style={{ fontSize: "clamp(15px, 1.4vw, 20px)" }}
+                        className="text-[#8B8374] font-medium leading-relaxed mb-6 lg:mb-10 xl:mb-16 max-w-[500px] md:mx-auto lg:mx-0 opacity-90"
+                        style={{ fontSize: "clamp(15px, 2.0vw, 20px)" }}
                     >
                         Seamlessly integrate with your existing systems without disrupting workflows.
                     </p>
 
                     {/* Tags Grid - 2x3 layout on mobile */}
-                    <div className="flex flex-wrap gap-2 lg:gap-3 xl:gap-4 max-w-[450px] lg:max-w-[420px] xl:max-w-[500px]">
+                    <div className="flex flex-wrap gap-2 lg:gap-3 xl:gap-4 max-w-[450px] md:max-w-[600px] lg:max-w-[420px] xl:max-w-[500px] md:justify-center">
                         {tags.map((tag, idx) => (
                             <div
                                 key={idx}

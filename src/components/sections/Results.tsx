@@ -8,18 +8,18 @@ export default function Results() {
             <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-16 lg:gap-16 xl:gap-24 lg:px-[80px] xl:px-[130px]">
 
                 {/* Left Content */}
-                <div className="w-full lg:w-[45%] flex flex-col text-left px-6 lg:px-0">
+                <div className="w-full lg:w-[45%] flex flex-col text-left md:text-center lg:text-left items-start md:items-center lg:items-start px-6 lg:px-0">
                     <h2
                         className="text-[#3D2C1E] font-lexend font-normal leading-[1.1] tracking-tight mb-8"
-                        style={{ fontSize: "clamp(32px, 4.4vw, 64px)" }}
+                        style={{ fontSize: "clamp(32px, 5.5vw, 64px)" }}
                     >
-                        What Teams <br className="hidden md:block" />
-                        <span style={{ fontFamily: "'Parabole', cursive" }}>Achieve</span> <br className="md:hidden" /> with <br className="hidden md:block" />
+                        What Teams <br className="hidden lg:block" />
+                        <span style={{ fontFamily: "'Parabole', cursive" }}>Achieve</span> <br className="lg:hidden" /> with <br className="hidden lg:block" />
                         InstaLearn
                     </h2>
                     <p
-                        className="text-[#8B8374] font-medium leading-[1.6] max-w-[540px] opacity-80 mb-12 lg:mb-0 lg:whitespace-nowrap"
-                        style={{ fontSize: "clamp(16px, 1.4vw, 22px)" }}
+                        className="text-[#8B8374] font-medium leading-[1.6] max-w-[540px] lg:max-w-[clamp(380px,38vw,540px)] md:mx-auto lg:mx-0 opacity-80 mb-12 lg:mb-0 lg:whitespace-nowrap"
+                        style={{ fontSize: "clamp(16px, 2.2vw, 22px)" }}
                     >
                         Short lessons, mobile access, AI-powered <br className="hidden lg:block" />
                         creation drive engagement & faster team <br className="hidden lg:block" />
@@ -27,13 +27,12 @@ export default function Results() {
                     </p>
 
                     {/* Mobile Metrics SVG (Shown only on mobile) */}
-                    <div className="lg:hidden w-full overflow-x-auto pb-4 scrollbar-hide">
-                        <div className="w-[361px] h-[252px] relative shrink-0">
+                    <div className="lg:hidden w-full overflow-x-auto pb-4 scrollbar-hide md:flex md:justify-center">
+                        <div className="w-[361px] md:w-[600px] aspect-[361/252] md:aspect-[600/418] relative shrink-0 md:mx-auto">
                             <Image
                                 src="/Metrics.svg"
                                 alt="Metrics visualization"
-                                width={361}
-                                height={252}
+                                fill
                                 className="object-contain"
                             />
                         </div>

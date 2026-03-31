@@ -46,17 +46,17 @@ export default function Industries() {
             <div className="w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12 xl:gap-16 overflow-hidden lg:px-[80px] xl:px-[130px]">
 
                 {/* Left Content */}
-                <div className="w-full lg:w-[45%] flex flex-col text-left px-6 lg:px-0">
+                <div className="w-full lg:w-[45%] flex flex-col text-left md:text-center lg:text-left items-start md:items-center lg:items-start px-6 md:px-0 lg:px-0">
                     <h2
                         className="text-[#3D2C1E] font-lexend font-normal leading-[1.1] tracking-tight mb-2 lg:mb-6"
-                        style={{ fontSize: "clamp(32px, 4.4vw, 64px)" }}
+                        style={{ fontSize: "clamp(32px, 5.0vw, 64px)" }}
                     >
                         Built For Frontline <br />
                         <span style={{ fontFamily: "'Parabole', cursive" }}>Teams</span>
                     </h2>
                     <p
-                        className="text-[#8B8374] font-medium leading-relaxed mb-4 lg:mb-20 xl:mb-40 max-w-[420px] opacity-80"
-                        style={{ fontSize: "clamp(15px, 1.4vw, 20px)" }}
+                        className="text-[#8B8374] font-medium leading-relaxed mb-4 lg:mb-20 xl:mb-40 max-w-[420px] md:mx-auto lg:mx-0 opacity-80"
+                        style={{ fontSize: "clamp(15px, 2.0vw, 20px)" }}
                     >
                         Designed for teams that don't sit at desks <br className="hidden lg:block" />
                         but power your operations.
@@ -85,8 +85,8 @@ export default function Industries() {
                 </div>
 
                 {/* Right Visual Area - Staggered Bubbles */}
-                <div className="w-full lg:w-[55%] overflow-x-scroll lg:overflow-x-visible scrollbar-hide touch-pan-x px-4 lg:px-0 scroll-smooth pb-4">
-                    <div className="w-[550px] lg:w-full h-[320px] lg:h-[480px] xl:h-[600px] relative mt-0 lg:mt-0">
+                <div className="w-full lg:w-[55%] overflow-x-scroll md:overflow-x-visible lg:overflow-x-visible scrollbar-hide touch-pan-x px-4 md:px-0 lg:px-0 scroll-smooth pb-4">
+                    <div className="w-[550px] md:w-[750px] md:mx-auto md:translate-x-16 lg:w-full h-[320px] md:h-[450px] lg:h-[480px] xl:h-[600px] relative mt-0 lg:mt-0">
                         {industries.map((item, index) => (
                             <div
                                 key={index}
@@ -96,7 +96,7 @@ export default function Industries() {
                                 {/* Profile Bubble */}
                                 <div
                                     className="bg-[#F2E9DC] rounded-[60px] relative overflow-hidden shadow-sm border-0"
-                                    style={{ width: "clamp(120px, 13.9vw, 200px)", height: "clamp(75px, 8.5vw, 122px)" }}
+                                    style={{ width: "clamp(120px, 18vw, 200px)", height: "clamp(75px, 11vw, 122px)" }}
                                 >
                                     <Image
                                         src={item.image}
@@ -110,7 +110,7 @@ export default function Industries() {
                                 <div className={`${item.labelColor} backdrop-blur-md px-4 py-2 lg:px-5 xl:px-6 lg:py-2.5 xl:py-3 rounded-[12px] shadow-sm ml-[-35px] relative z-10 border border-white/50`}>
                                     <span
                                         className="text-[#3D2C1E] font-lexend font-bold"
-                                        style={{ fontSize: "clamp(11px, 1.1vw, 18px)" }}
+                                        style={{ fontSize: "clamp(11px, 1.5vw, 18px)" }}
                                     >
                                         {item.name}
                                     </span>
@@ -121,16 +121,16 @@ export default function Industries() {
                 </div>
 
                 {/* Support Box - Mobile only */}
-                <div className="flex lg:hidden bg-[#FCF6E3] rounded-[16px] p-4 items-center gap-6 shadow-sm mt-0 mx-6">
+                <div className="flex lg:hidden bg-[#FCF6E3] rounded-[16px] md:rounded-[20px] p-4 md:p-5 items-center gap-6 shadow-sm mt-0 mx-6 md:mx-auto md:max-w-[465px] md:justify-center md:-translate-y-8 relative z-20">
                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-2.5 shadow-sm">
+                        <div className="w-10 h-10 md:w-11 md:h-11 bg-white rounded-full flex items-center justify-center p-2.5 shadow-sm">
                             <Image src="/logo.svg" alt="Apple" width={24} height={24} className="brightness-0" />
                         </div>
-                        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-2.5 shadow-sm">
+                        <div className="w-10 h-10 md:w-11 md:h-11 bg-white rounded-full flex items-center justify-center p-2.5 shadow-sm">
                             <Image src="/instalearn/i1.svg" alt="Android" width={24} height={24} />
                         </div>
                     </div>
-                    <p className="text-[#CE510B] italic text-[16px] leading-tight font-medium max-w-[200px]">
+                    <p className="text-[#CE510B] italic text-[16px] md:text-[18px] leading-tight font-medium max-w-[200px] md:max-w-none">
                         Fully supported on iOS and Android devices
                     </p>
                 </div>
